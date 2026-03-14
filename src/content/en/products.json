@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Products — BudMedia",
+    "description": "Pizza boxes, delivery bags and wrapping paper with your ad. Full-colour print, food-safe, EU-certified. See products and pricing."
+  },
+  "title": "Products",
+  "subtitle": "Packaging that works for you",
+  "products": [
+    {
+      "key": "pizzaBox32",
+      "name": "Pizza box 32 cm",
+      "description": "The most popular size. Fits standard pizzas. Full-colour digital print on all sides. E-flute corrugated board, food-contact approved.",
+      "dimensions": "32 × 32 × 4 cm",
+      "material": "E-flute corrugated board, food-safe",
+      "placements": [
+        { "zone": "Side panel", "priceFrom": 500, "description": "One side of the box. Visible during delivery and on the table." },
+        { "zone": "Full lid", "priceFrom": 1200, "description": "The entire top. First thing the customer sees." },
+        { "zone": "Full wrap", "priceFrom": 2000, "description": "All sides. Maximum visibility." }
+      ]
+    },
+    {
+      "key": "pizzaBox40",
+      "name": "Pizza box 40 cm",
+      "description": "For family pizzas and large sizes. Bigger ad surfaces. Same print and material quality as 32 cm.",
+      "dimensions": "40 × 40 × 4 cm",
+      "material": "E-flute corrugated board, food-safe",
+      "placements": [
+        { "zone": "Side panel", "priceFrom": 600, "description": "Larger side surface gives more room for your ad." },
+        { "zone": "Full lid", "priceFrom": 1400, "description": "40 cm lid — significant visibility." },
+        { "zone": "Full wrap", "priceFrom": 2200, "description": "Full coverage on all sides." }
+      ]
+    },
+    {
+      "key": "deliveryBag",
+      "name": "Delivery bag",
+      "description": "Paper bag for takeaway and delivery. Fits boxes, sides and drinks. Full ad print on both sides.",
+      "dimensions": "Variable — adapted to restaurant needs",
+      "material": "Kraft paper, food-safe",
+      "placements": [
+        { "zone": "Full print", "priceFrom": 800, "description": "Both sides of the bag. Carried visibly from restaurant to door." }
+      ]
+    },
+    {
+      "key": "wrappingPaper",
+      "name": "Wrapping paper",
+      "description": "For wraps, sandwiches and other food items. Food-safe paper with ad print.",
+      "dimensions": "Custom sheets",
+      "material": "Food-safe wrapping paper",
+      "placements": [
+        { "zone": "Full print", "priceFrom": 300, "description": "Entire paper surface. Low per-unit cost at volume." }
+      ]
+    }
+  ],
+  "compliance": {
+    "title": "Materials and certifications",
+    "items": [
+      "EU Regulation 1935/2004 for food contact materials",
+      "Food-safe printing inks",
+      "PFAS-free in accordance with Danish law",
+      "Declaration of Compliance from manufacturer",
+      "Registered with the Danish Veterinary and Food Administration"
+    ]
+  }
+}

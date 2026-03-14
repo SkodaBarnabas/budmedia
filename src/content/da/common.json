@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "products": "Produkter",
+    "pricing": "Priser",
+    "restaurants": "Restauranter",
+    "about": "Om os",
+    "contact": "Kontakt",
+    "press": "Presse",
+    "cta": "Få et tilbud"
+  },
+  "footer": {
+    "parent": "Et brand under BudGruppen",
+    "cvr": "CVR 46232194",
+    "sdg": "BudMedia bidrager til FN's Verdensmål 8, 9, 11, 12, 13.",
+    "privacy": "Privatlivspolitik",
+    "cookies": "Cookiepolitik",
+    "rights": "Alle rettigheder forbeholdes."
+  },
+  "currency": "DKK",
+  "currencySymbol": "kr.",
+  "perUnit": "pr. stk.",
+  "perMonth": "pr. måned",
+  "from": "Fra",
+  "contact": {
+    "email": "kontakt@budmedia.dk",
+    "phone": "+45 91 19 03 69",
+    "phoneDisplay": "91 19 03 69",
+    "location": "Sønderborg, Danmark"
+  }
+}

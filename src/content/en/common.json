@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "products": "Products",
+    "pricing": "Pricing",
+    "restaurants": "Restaurants",
+    "about": "About",
+    "contact": "Contact",
+    "press": "Press",
+    "cta": "Get a quote"
+  },
+  "footer": {
+    "parent": "A brand by BudGruppen",
+    "cvr": "CVR 46232194",
+    "sdg": "BudMedia contributes to UN Sustainable Development Goals 8, 9, 11, 12, 13.",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "rights": "All rights reserved."
+  },
+  "currency": "DKK",
+  "currencySymbol": "DKK",
+  "perUnit": "per box",
+  "perMonth": "per month",
+  "from": "From",
+  "contact": {
+    "email": "kontakt@budmedia.dk",
+    "phone": "+45 91 19 03 69",
+    "phoneDisplay": "91 19 03 69",
+    "location": "Sønderborg, Denmark"
+  }
+}

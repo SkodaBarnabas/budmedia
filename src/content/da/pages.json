@@ -1,0 +1,188 @@
+{
+  "pricing": {
+    "meta": {
+      "title": "Priser — BudMedia",
+      "description": "Se hvad det koster at annoncere på pizzabakker. Interaktiv prisberegner. Sammenlign med Facebook og Google Ads."
+    },
+    "title": "Priser",
+    "subtitle": "Gennemsigtig prissætning. Ingen skjulte gebyrer.",
+    "calculator": {
+      "title": "Prisberegner",
+      "productLabel": "Produkt",
+      "placementLabel": "Annonceplads",
+      "quantityLabel": "Antal pr. måned",
+      "restaurantsLabel": "Antal restauranter",
+      "resultTitle": "Din kampagne",
+      "monthlyTotal": "Månedlig pris",
+      "estimatedImpressions": "Estimerede visninger",
+      "comparisonNote": "Samme visninger via Facebook Ads: {facebookCost} kr. — Google Ads: {googleCost} kr.",
+      "impressionsNote": "Baseret på 2,8 personer pr. bakke gennemsnitligt.",
+      "getQuote": "Få et tilbud"
+    },
+    "guarantee": {
+      "title": "Distributionsgaranti",
+      "text": "Hvis den første batch bakker ikke er fuldt distribueret inden for 30 dage, er næste måned gratis."
+    },
+    "scarcity": {
+      "text": "Hver bakke har maks. 4 annoncepladser. Når en restaurants pladser er fyldt, tilmeldes nye annoncører næste batch."
+    }
+  },
+  "restaurants": {
+    "meta": {
+      "title": "Gratis emballage til restauranter — BudMedia",
+      "description": "Få gratis emballage med dit logo og branding. Ingen kontrakt, ingen omkostning. BudMedia leverer direkte til din restaurant."
+    },
+    "title": "Gratis emballage til din restaurant",
+    "subtitle": "Du betaler allerede for bakker. Vi giver dig bedre — uden omkostning.",
+    "offer": {
+      "title": "Hvad du får",
+      "items": [
+        "Professionelt trykte pizzabakker med dit navn, logo og branding",
+        "Højere kvalitet end de hvide/brune bakker du køber i dag",
+        "Professionelt grafisk design af din bakke — inkluderet",
+        "Opdateret design hvert kvartal — ingen ekstra omkostning",
+        "Ingen kontrakt. Ingen minimumbestilling. Ingen binding."
+      ]
+    },
+    "cost": {
+      "title": "Hvad det koster",
+      "text": "Ingenting. Emballagen er finansieret af annoncører — lokale virksomheder der annoncerer på bakkernes sider. Det er ikke konkurrenter til din restaurant."
+    },
+    "guarantee": {
+      "title": "Kvalitetsgaranti",
+      "text": "Hvis kvaliteten ikke matcher eller overgår dine nuværende bakker, beholder du det du har brugt, og vi henter resten. Ingen spørgsmål."
+    },
+    "cta": {
+      "title": "Kom i gang",
+      "text": "Kontakt os med dit restaurantnavn og adresse. Vi vender tilbage med et forslag til din emballage inden for 48 timer.",
+      "button": "Kontakt os"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Om os — BudMedia",
+      "description": "BudMedia er et brand under BudGruppen. Vi forbinder lokale annoncører med lokale restauranter gennem emballage."
+    },
+    "title": "Om BudMedia",
+    "intro": "BudMedia gør emballage til et reklamemedie. Restauranter får gratis, professionelt trykt emballage. Annoncører får fysisk synlighed i lokale hjem. Pengene bliver i lokalsamfundet.",
+    "mission": {
+      "title": "Lokal værdi",
+      "text": "Hvert år sender danske virksomheder millioner af kroner til internationale annonceplatforme. Det meste rammer folk der aldrig sætter fod i butikken. BudMedia giver lokale virksomheder adgang til reklame der rent faktisk rammer deres naboer — på køkkenbordet, ikke i et feed. Emballagen eksisterer allerede. Vi giver den et formål ud over at holde på varmen."
+    },
+    "parent": {
+      "title": "BudGruppen",
+      "text": "BudMedia er et brand under BudGruppen (CVR 46232194), der også driver MadBud.dk — en etisk madleveringsplatform med faste ansættelser i stedet for gig-økonomi. Begge brands arbejder med at styrke lokale økonomier i danske byer."
+    },
+    "founder": {
+      "title": "Grundlægger",
+      "name": "Barnabás Skoda",
+      "text": "Studerende på Elektronik Engineering ved Syddansk Universitet (SDU) i Sønderborg. Medlem af SDU Startup Station. Grundlægger af BudGruppen. Startede BudMedia for at give lokale virksomheder et reelt alternativ til digital annoncering — og for at give restauranter bedre emballage uden omkostning."
+    },
+    "location": {
+      "title": "Placering",
+      "text": "BudMedia holder til i Sønderborg, Syddanmark. Støttet af SDU Startup Station. Opererer på tværs af Sønderborg, Nordborg og Aabenraa med nationale ambitioner."
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Kontakt — BudMedia",
+      "description": "Kontakt BudMedia for et tilbud på annoncering på pizzabakker eller gratis emballage til din restaurant."
+    },
+    "title": "Kontakt",
+    "subtitle": "Vi svarer inden for 24 timer.",
+    "form": {
+      "name": "Navn",
+      "company": "Virksomhed",
+      "email": "E-mail",
+      "phone": "Telefon (valgfrit)",
+      "message": "Besked",
+      "submit": "Send besked",
+      "sending": "Sender...",
+      "success": "Tak. Vi vender tilbage inden for 24 timer.",
+      "error": "Noget gik galt. Send en e-mail til kontakt@budmedia.dk direkte."
+    },
+    "direct": {
+      "title": "Direkte kontakt",
+      "emailLabel": "E-mail",
+      "phoneLabel": "Telefon",
+      "locationLabel": "Placering",
+      "cvrLabel": "CVR"
+    }
+  },
+  "press": {
+    "meta": {
+      "title": "Presse — BudMedia",
+      "description": "Pressemateriale, nøgletal og brandaktiver for BudMedia."
+    },
+    "title": "Presse",
+    "subtitle": "Materiale til journalister, partnere og samarbejdspartnere.",
+    "stats": {
+      "title": "Nøgletal",
+      "items": [
+        { "value": "38", "label": "Restauranter kortlagt" },
+        { "value": "70+", "label": "Potentielle annoncører identificeret" },
+        { "value": "2,8", "label": "Gennemsnitlige seere pr. bakke" },
+        { "value": "30+", "label": "Minutters eksponering pr. brug" }
+      ]
+    },
+    "timeline": {
+      "title": "Selskabshistorik",
+      "items": [
+        { "date": "2024", "event": "BudGruppen stiftet (CVR 46232194)" },
+        { "date": "2024", "event": "MadBud.dk lanceret — etisk madlevering i Sønderborg" },
+        { "date": "2025", "event": "BudMedia koncept udviklet. Leverandøraftale på plads." },
+        { "date": "2025", "event": "Første annoncører tilmeldt: Yrden Media, CalibrisMedia" },
+        { "date": "2025", "event": "38 restauranter kortlagt i Sønderborg, Nordborg, Aabenraa" }
+      ]
+    },
+    "founder": {
+      "title": "Grundlægger",
+      "name": "Barnabás Skoda",
+      "bio": "Studerende på Elektronik Engineering ved Syddansk Universitet (SDU) i Sønderborg. Medlem af SDU Startup Station. Grundlægger af BudGruppen, der driver BudMedia og MadBud.dk.",
+      "contact": "kontakt@budmedia.dk"
+    },
+    "assets": {
+      "title": "Brandmaterialer",
+      "description": "Logo, farveprofil og brandguide kan downloades her.",
+      "downloadButton": "Download mediekit (PDF)"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privatlivspolitik — BudMedia",
+      "description": "Privatlivspolitik for BudMedia."
+    },
+    "title": "Privatlivspolitik",
+    "lastUpdated": "Sidst opdateret: marts 2025",
+    "sections": [
+      {
+        "title": "Dataansvarlig",
+        "text": "BudGruppen (CVR 46232194), Sønderborg, Danmark er dataansvarlig for behandling af personoplysninger på budmedia.dk."
+      },
+      {
+        "title": "Hvilke data vi indsamler",
+        "text": "Vi indsamler kun de oplysninger du selv afgiver via vores kontaktformular: navn, virksomhed, e-mail, telefonnummer og besked."
+      },
+      {
+        "title": "Formål",
+        "text": "Dine oplysninger bruges udelukkende til at besvare din henvendelse og eventuelt udarbejde et tilbud."
+      },
+      {
+        "title": "Opbevaring",
+        "text": "Vi opbevarer dine kontaktoplysninger i op til 12 måneder efter din henvendelse, medmindre vi indgår en aftale der kræver længere opbevaring."
+      },
+      {
+        "title": "Tredjeparter",
+        "text": "Kontaktformularen leveres af Formspree. Se deres privatlivspolitik på formspree.io. Vi videregiver ikke dine oplysninger til andre tredjeparter."
+      },
+      {
+        "title": "Analytics",
+        "text": "Vi bruger Plausible Analytics, som ikke anvender cookies og ikke indsamler personoplysninger. Plausible er GDPR-kompatibelt."
+      },
+      {
+        "title": "Dine rettigheder",
+        "text": "Du har ret til at se, rette eller slette dine personoplysninger. Kontakt os på kontakt@budmedia.dk."
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Produkter — BudMedia",
+    "description": "Pizzabakker, leveringsposer og indpakningspapir med din annonce. Fuld farvetryk, food-safe, EU-certificeret. Se produkter og priser."
+  },
+  "title": "Produkter",
+  "subtitle": "Emballage der arbejder for dig",
+  "products": [
+    {
+      "key": "pizzaBox32",
+      "name": "Pizzabakke 32 cm",
+      "description": "Den mest populære størrelse. Passer til standardpizzaer. Fuld farve digitaltryk på alle sider. E-bølge pap, fødevaregodkendt.",
+      "dimensions": "32 × 32 × 4 cm",
+      "material": "E-bølge wellpap, fødevaresikker",
+      "placements": [
+        { "zone": "Sidepanel", "priceFrom": 500, "description": "Én side af bakken. Synlig ved levering og på bordet." },
+        { "zone": "Fuldt låg", "priceFrom": 1200, "description": "Hele oversiden. Det første kunden ser." },
+        { "zone": "Hel bakke", "priceFrom": 2000, "description": "Alle sider. Maksimal synlighed." }
+      ]
+    },
+    {
+      "key": "pizzaBox40",
+      "name": "Pizzabakke 40 cm",
+      "description": "Til familiepizzaer og stor størrelse. Større annonceflader. Samme print- og materialekvalitet som 32 cm.",
+      "dimensions": "40 × 40 × 4 cm",
+      "material": "E-bølge wellpap, fødevaresikker",
+      "placements": [
+        { "zone": "Sidepanel", "priceFrom": 600, "description": "Større sideflade giver mere plads til din annonce." },
+        { "zone": "Fuldt låg", "priceFrom": 1400, "description": "40 cm låg — markant synlighed." },
+        { "zone": "Hel bakke", "priceFrom": 2200, "description": "Fuld dækning på alle sider." }
+      ]
+    },
+    {
+      "key": "deliveryBag",
+      "name": "Leveringspose",
+      "description": "Papirpose til takeaway og levering. Kan rumme bakker, sideordrer og drikkevarer. Fuldt annonceprint på begge sider.",
+      "dimensions": "Variabel — tilpasses restaurantens behov",
+      "material": "Kraftpapir, fødevaresikkert",
+      "placements": [
+        { "zone": "Fuldt print", "priceFrom": 800, "description": "Begge sider af posen. Bæres synligt fra restaurant til dør." }
+      ]
+    },
+    {
+      "key": "wrappingPaper",
+      "name": "Indpakningspapir",
+      "description": "Til wraps, sandwiches og andre madvarer. Fødevaresikkert papir med annoncetryk.",
+      "dimensions": "Tilpassede ark",
+      "material": "Fødevaresikkert indpakningspapir",
+      "placements": [
+        { "zone": "Fuldt print", "priceFrom": 300, "description": "Hele papirets overflade. Lav pris pr. stk. ved store mængder." }
+      ]
+    }
+  ],
+  "compliance": {
+    "title": "Materialer og certificeringer",
+    "items": [
+      "EU-forordning 1935/2004 for fødevarekontaktmaterialer",
+      "Fødevaresikre trykfarver",
+      "PFAS-fri i overensstemmelse med dansk lovgivning",
+      "Declaration of Compliance fra producent",
+      "Registreret hos Fødevarestyrelsen"
+    ]
+  }
+}

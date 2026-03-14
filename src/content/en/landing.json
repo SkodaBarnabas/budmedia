@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "BudMedia — Advertising on packaging",
+    "description": "BudMedia delivers free, professionally printed packaging to restaurants — funded by local advertisers. Your ad from 5 DKK per box."
+  },
+  "hero": {
+    "eyebrow": "Advertising on packaging",
+    "headline": "Your ad on local pizza boxes",
+    "subheadline": "Physical advertising that sits on the kitchen table. Not in a feed.",
+    "ctaPrimary": "Get a quote",
+    "ctaSecondary": "See how it works"
+  },
+  "howItWorks": {
+    "title": "Three steps",
+    "steps": [
+      {
+        "number": "01",
+        "title": "We design your ad",
+        "description": "Send your logo. We create a print-ready design that fits the packaging."
+      },
+      {
+        "number": "02",
+        "title": "We produce and deliver",
+        "description": "EU-certified production. Food-safe materials. Delivered directly to partner restaurants."
+      },
+      {
+        "number": "03",
+        "title": "Your customers hold it",
+        "description": "Every box that leaves the restaurant carries your ad into a local household."
+      }
+    ]
+  },
+  "products": {
+    "title": "Products",
+    "items": [
+      {
+        "key": "pizzaBox",
+        "name": "Pizza boxes",
+        "description": "32 and 40 cm. Full-colour print. Food-contact approved.",
+        "priceFrom": "From 5 DKK/box"
+      },
+      {
+        "key": "deliveryBag",
+        "name": "Delivery bags",
+        "description": "Paper bags with your print. For takeaway and delivery.",
+        "priceFrom": "From 8 DKK/unit"
+      },
+      {
+        "key": "wrappingPaper",
+        "name": "Wrapping paper",
+        "description": "Food-safe paper with full-surface print.",
+        "priceFrom": "From 3 DKK/unit"
+      }
+    ],
+    "cta": "See all products"
+  },
+  "comparison": {
+    "title": "Compare with digital ads",
+    "headers": ["", "BudMedia", "Facebook Ads", "Google Ads"],
+    "rows": [
+      {
+        "label": "Cost per 1,000 impressions",
+        "values": ["~35 DKK", "50–150 DKK", "80–300 DKK"]
+      },
+      {
+        "label": "Exposure time",
+        "values": ["30+ minutes", "Under 1 second", "2–5 seconds"]
+      },
+      {
+        "label": "Blocked by ad blockers",
+        "values": ["No", "Yes", "Yes"]
+      },
+      {
+        "label": "Reaches entire household",
+        "values": ["Yes (2.8 people avg.)", "No", "No"]
+      },
+      {
+        "label": "Setup effort for advertiser",
+        "values": ["Send your logo", "Hours", "Hours"]
+      }
+    ]
+  },
+  "restaurantBrief": {
+    "title": "Free packaging for restaurants",
+    "description": "We deliver professionally printed packaging with your logo and branding. Free. No contract. No commitment. The quality matches or exceeds what you pay for today.",
+    "cta": "Read more"
+  },
+  "serviceScope": {
+    "title": "What's included",
+    "items": [
+      {
+        "title": "Ad placement",
+        "description": "Your ad printed on the selected number of boxes per month, distributed across your chosen restaurants."
+      },
+      {
+        "title": "Professional ad design",
+        "description": "We design the ad from your logo and brand materials."
+      },
+      {
+        "title": "Restaurant matching",
+        "description": "We select restaurants that match your target audience and local area."
+      },
+      {
+        "title": "Monthly distribution report",
+        "description": "How many boxes distributed, estimated impressions, coverage area."
+      },
+      {
+        "title": "Quarterly design refresh",
+        "description": "New ad design every quarter. No extra cost."
+      }
+    ]
+  },
+  "boxShowcase": {
+    "eyebrow": "The product",
+    "headline": "The pizza box as ad space",
+    "description": "The restaurant's logo and branding on the lid. Your ad on the side panels. Printed in full colour on food-safe packaging.",
+    "specs": [
+      "32 × 32 × 4 cm",
+      "Full-colour digital print",
+      "E-flute corrugated board",
+      "Food-safe & PFAS-free",
+      "EU-certified production"
+    ],
+    "priceNote": "Ad space from 5 DKK per box"
+  },
+  "aboutBrief": {
+    "title": "About BudMedia",
+    "text": "BudMedia is a brand by BudGruppen. We connect local advertisers with local restaurants through packaging. Ad revenue stays in the local community — not with international platforms.",
+    "cta": "More about us"
+  },
+  "contactCta": {
+    "title": "Let's talk about your next campaign",
+    "namePlaceholder": "Name",
+    "companyPlaceholder": "Company",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Message",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Thank you. We'll get back to you within 24 hours.",
+    "error": "Something went wrong. Try again or email kontakt@budmedia.dk directly."
+  }
+}

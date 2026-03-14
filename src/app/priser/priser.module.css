@@ -1,0 +1,52 @@
+/* ===== Page Header ===== */
+.header {
+  padding: var(--space-3xl) 0 var(--space-2xl);
+}
+
+.subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  font-style: italic;
+  font-family: var(--font-serif);
+  margin-top: var(--space-sm);
+  max-width: 38ch;
+}
+
+/* ===== Calculator Section ===== */
+.calculatorSection {
+  padding-bottom: var(--space-2xl);
+}
+
+/* ===== Guarantee ===== */
+.guarantee {
+  padding-block: var(--space-2xl);
+  background-color: var(--color-surface);
+}
+
+.guaranteeInner {
+  max-width: var(--max-width-narrow);
+}
+
+.guaranteeTitle {
+  margin-bottom: var(--space-sm);
+}
+
+.guaranteeText {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  max-width: 60ch;
+}
+
+/* ===== Scarcity ===== */
+.scarcity {
+  padding-block: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.scarcityText {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 60ch;
+}

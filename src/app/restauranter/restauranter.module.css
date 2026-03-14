@@ -1,0 +1,111 @@
+/* ===== Page Header ===== */
+.header {
+  padding: var(--space-3xl) 0 var(--space-2xl);
+}
+
+.subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  font-style: italic;
+  font-family: var(--font-serif);
+  margin-top: var(--space-sm);
+  max-width: 42ch;
+}
+
+/* ===== Offer Section ===== */
+.offer {
+  padding-bottom: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-xl);
+}
+
+.offerTitle {
+  margin-bottom: var(--space-lg);
+}
+
+.offerList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.offerItem {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  max-width: 60ch;
+}
+
+.offerDash {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+/* ===== Cost Section ===== */
+.cost {
+  padding-block: var(--space-2xl);
+  background-color: var(--color-surface);
+}
+
+.costTitle {
+  margin-bottom: var(--space-sm);
+}
+
+.costText {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  max-width: 60ch;
+}
+
+/* ===== Guarantee ===== */
+.guarantee {
+  padding-block: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.guaranteeInner {
+  max-width: var(--max-width-narrow);
+}
+
+.guaranteeTitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+.guaranteeText {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  max-width: 60ch;
+}
+
+/* ===== CTA Section ===== */
+.cta {
+  padding-block: var(--space-2xl);
+}
+
+.ctaTitle {
+  margin-bottom: var(--space-sm);
+}
+
+.ctaText {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  max-width: 50ch;
+  margin-bottom: var(--space-lg);
+}
+
+.ctaButton {
+  display: inline-flex;
+}
