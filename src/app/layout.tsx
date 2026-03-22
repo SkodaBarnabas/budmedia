@@ -1,23 +1,23 @@
 import type { Metadata } from 'next';
-import { Instrument_Serif, DM_Sans } from 'next/font/google';
+import { Cormorant_Garamond, Plus_Jakarta_Sans } from 'next/font/google';
 import { LanguageProvider } from '@/hooks/useLanguage';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { PLAUSIBLE_DOMAIN } from '@/lib/constants';
 import './globals.css';
 
-const serif = Instrument_Serif({
+const serif = Cormorant_Garamond({
   subsets: ['latin'],
-  weight: '400',
+  weight: ['400', '500', '600'],
   style: ['normal', 'italic'],
   variable: '--font-serif',
   display: 'swap',
   fallback: ['Georgia', 'Times New Roman', 'serif'],
 });
 
-const sans = DM_Sans({
+const sans = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-sans',
   display: 'swap',
   fallback: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],

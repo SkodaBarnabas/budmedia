@@ -11,11 +11,11 @@ import enCommon from '@/content/en/common.json';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
-  { href: '/produkter', key: 'products' },
-  { href: '/priser', key: 'pricing' },
-  { href: '/restauranter', key: 'restaurants' },
-  { href: '/om-os', key: 'about' },
-  { href: '/kontakt', key: 'contact' },
+  { href: '/#produkt', key: 'products' },
+  { href: '/#hvordan', key: 'pricing' },
+  { href: '/#priser', key: 'restaurants' },
+  { href: '/#restauranter', key: 'about' },
+  { href: '/#kontakt', key: 'contact' },
 ] as const;
 
 export function Header() {
@@ -25,7 +25,7 @@ export function Header() {
 
   useEffect(() => {
     function handleScroll() {
-      setScrolled(window.scrollY > 40);
+      setScrolled(window.scrollY > 100);
     }
 
     handleScroll();
@@ -66,7 +66,7 @@ export function Header() {
 
           <div className={styles.actions}>
             <LanguageSwitcher />
-            <Link href="/kontakt" className="btn-primary">
+            <Link href="/#kontakt" className="btn-primary">
               {content.nav.cta}
             </Link>
           </div>

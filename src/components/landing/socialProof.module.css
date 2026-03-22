@@ -1,0 +1,47 @@
+.socialProof {
+  padding: 3.75rem 0; /* 60px */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.label {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 2rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.logoBox {
+  width: 120px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoBox span {
+  font-size: 0.625rem;
+  color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .logos {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

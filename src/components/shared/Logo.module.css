@@ -3,7 +3,7 @@
   font-size: 1.35rem;
   font-weight: 400;
   color: var(--color-text);
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
   white-space: nowrap;
   line-height: 1;
 }

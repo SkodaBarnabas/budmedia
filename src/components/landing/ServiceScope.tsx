@@ -3,23 +3,26 @@
 import { useContent } from '@/hooks/useLanguage';
 import daLanding from '@/content/da/landing.json';
 import enLanding from '@/content/en/landing.json';
-import styles from './landing.module.css';
+import styles from './serviceCards.module.css';
+
+const ICONS = ['📐', '🎨', '📍', '📊', '🔄'];
 
 export function ServiceScope() {
   const content = useContent(daLanding, enLanding);
 
   return (
-    <section className={styles.serviceScope}>
+    <section id="inkluderet" className={styles.section}>
       <div className="container">
-        <h2 className={styles.serviceScopeTitle}>{content.serviceScope.title}</h2>
-        <ul className={styles.serviceScopeList}>
-          {content.serviceScope.items.map((item) => (
-            <li key={item.title} className={styles.serviceScopeItem}>
-              <h3 className={styles.serviceScopeItemTitle}>{item.title}</h3>
-              <p className={styles.serviceScopeItemDescription}>{item.description}</p>
-            </li>
+        <h2 className={styles.title}>{content.serviceScope.title}</h2>
+        <div className={styles.grid}>
+          {content.serviceScope.items.map((item, i) => (
+            <div key={item.title} className={styles.card}>
+              <span className={styles.icon}>{ICONS[i]}</span>
+              <h3 className={styles.cardTitle}>{item.title}</h3>
+              <p className={styles.cardDescription}>{item.description}</p>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );

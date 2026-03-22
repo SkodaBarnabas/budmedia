@@ -1,0 +1,76 @@
+.section {
+  position: relative;
+  background-color: var(--color-restaurant-bg);
+  padding-block: 7.5rem;
+}
+
+.accentLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+.inner {
+  max-width: var(--max-width-narrow);
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+}
+
+.description {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  max-width: 52ch;
+}
+
+.photoPlaceholder {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 3 / 2;
+  margin-bottom: var(--space-lg);
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px dashed rgba(255, 255, 255, 0.12);
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+}
+
+.photoIcon {
+  font-size: 3rem;
+}
+
+.photoText {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  opacity: 0.6;
+  font-style: italic;
+  text-align: center;
+  max-width: 32ch;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: 4rem;
+  }
+}

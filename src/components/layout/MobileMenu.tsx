@@ -28,7 +28,7 @@ export function MobileMenu({ navLinks, content, onClose }: MobileMenuProps) {
       </nav>
       <div className={styles.bottom}>
         <Link
-          href="/kontakt"
+          href="/#kontakt"
           className="btn-primary"
           onClick={onClose}
         >
