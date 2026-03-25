@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useContent } from '@/hooks/useLanguage';
 import daPages from '@/content/da/pages.json';
 import enPages from '@/content/en/pages.json';
-import styles from './restauranter.module.css';
 
 export function RestauranterContent() {
   const content = useContent(daPages, enPages);
@@ -12,22 +11,22 @@ export function RestauranterContent() {
 
   return (
     <>
-      <section className={styles.header}>
+      <section className="pt-32 pb-12 md:pt-40 md:pb-16">
         <div className="container">
-          <h1>{r.title}</h1>
-          <p className={styles.subtitle}>{r.subtitle}</p>
+          <h1 className="text-display font-semibold tracking-tighter">{r.title}</h1>
+          <p className="text-lg text-text-secondary mt-4 max-w-[50ch] leading-relaxed">
+            {r.subtitle}
+          </p>
         </div>
       </section>
 
-      <section className={styles.offer}>
+      <section className="pb-16">
         <div className="container">
-          <h2 className={styles.offerTitle}>{r.offer.title}</h2>
-          <ul className={styles.offerList}>
+          <h2 className="text-2xl font-semibold tracking-tight mb-8">{r.offer.title}</h2>
+          <ul className="space-y-4">
             {r.offer.items.map((item) => (
-              <li key={item} className={styles.offerItem}>
-                <span className={styles.offerDash} aria-hidden="true">
-                  &#x2014;
-                </span>
+              <li key={item} className="flex items-start gap-4 text-base text-text-secondary">
+                <span className="text-accent flex-shrink-0 mt-1" aria-hidden="true">&#x2014;</span>
                 {item}
               </li>
             ))}
@@ -35,27 +34,27 @@ export function RestauranterContent() {
         </div>
       </section>
 
-      <section className={styles.cost}>
+      <section className="pb-16">
         <div className="container">
-          <h2 className={styles.costTitle}>{r.cost.title}</h2>
-          <p className={styles.costText}>{r.cost.text}</p>
+          <h2 className="text-2xl font-semibold tracking-tight mb-4">{r.cost.title}</h2>
+          <p className="text-base text-text-secondary leading-relaxed max-w-[55ch]">{r.cost.text}</p>
         </div>
       </section>
 
-      <section className={styles.guarantee}>
+      <section className="pb-16">
         <div className="container">
-          <div className={styles.guaranteeInner}>
-            <h3 className={styles.guaranteeTitle}>{r.guarantee.title}</h3>
-            <p className={styles.guaranteeText}>{r.guarantee.text}</p>
+          <div className="bg-surface border border-border-subtle rounded-xl p-8 md:p-10 max-w-2xl">
+            <h3 className="text-xl font-semibold tracking-tight mb-3">{r.guarantee.title}</h3>
+            <p className="text-sm text-text-secondary leading-relaxed">{r.guarantee.text}</p>
           </div>
         </div>
       </section>
 
-      <section className={styles.cta}>
-        <div className="container">
-          <h2 className={styles.ctaTitle}>{r.cta.title}</h2>
-          <p className={styles.ctaText}>{r.cta.text}</p>
-          <Link href="/kontakt" className={`btn-primary ${styles.ctaButton}`}>
+      <section className="py-16 md:py-20 bg-surface">
+        <div className="container text-center max-w-lg mx-auto">
+          <h2 className="text-2xl font-semibold tracking-tight mb-4">{r.cta.title}</h2>
+          <p className="text-base text-text-secondary leading-relaxed mb-8">{r.cta.text}</p>
+          <Link href="/kontakt" className="btn-primary">
             {r.cta.button}
           </Link>
         </div>

@@ -1,23 +1,26 @@
 'use client';
 
 import { useLanguage } from '@/hooks/useLanguage';
-import styles from './LanguageSwitcher.module.css';
 
 export function LanguageSwitcher() {
   const { locale, setLocale } = useLanguage();
 
   return (
-    <div className={styles.switcher}>
+    <div className="flex items-center gap-1 text-xs tracking-wide">
       <button
-        className={`${styles.option} ${locale === 'da' ? styles.active : ''}`}
+        className={`px-1.5 py-0.5 rounded transition-colors duration-150 ${
+          locale === 'da' ? 'text-text font-medium' : 'text-text-muted hover:text-text-secondary'
+        }`}
         onClick={() => setLocale('da')}
         aria-label="Skift til dansk"
       >
         DA
       </button>
-      <span className={styles.separator}>/</span>
+      <span className="text-text-muted/40 select-none">/</span>
       <button
-        className={`${styles.option} ${locale === 'en' ? styles.active : ''}`}
+        className={`px-1.5 py-0.5 rounded transition-colors duration-150 ${
+          locale === 'en' ? 'text-text font-medium' : 'text-text-muted hover:text-text-secondary'
+        }`}
         onClick={() => setLocale('en')}
         aria-label="Switch to English"
       >

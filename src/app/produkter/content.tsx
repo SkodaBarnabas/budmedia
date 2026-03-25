@@ -4,76 +4,69 @@ import { useContent } from '@/hooks/useLanguage';
 import { formatOreAsDkk } from '@/lib/utils';
 import daProducts from '@/content/da/products.json';
 import enProducts from '@/content/en/products.json';
-import styles from './produkter.module.css';
 
 export function ProdukterContent() {
   const content = useContent(daProducts, enProducts);
 
   return (
     <>
-      <section className={styles.header}>
+      <section className="pt-32 pb-12 md:pt-40 md:pb-16">
         <div className="container">
-          <h1>{content.title}</h1>
-          <p className={styles.subtitle}>{content.subtitle}</p>
+          <h1 className="text-display font-semibold tracking-tighter">{content.title}</h1>
+          <p className="text-lg text-text-secondary mt-4 max-w-[50ch] leading-relaxed">
+            {content.subtitle}
+          </p>
         </div>
       </section>
 
-      <section className={styles.productList}>
-        <div className="container">
+      <section className="pb-16">
+        <div className="container space-y-8">
           {content.products.map((product) => (
-            <article key={product.key} className={styles.product}>
-              <h2 className={styles.productName}>{product.name}</h2>
-              <p className={styles.productDescription}>
-                {product.description}
-              </p>
-
-              <div className={styles.productMeta}>
-                <span className={styles.productMetaItem}>
-                  <span className={styles.productMetaLabel}>
+            <article key={product.key} className="border border-border-subtle rounded-xl overflow-hidden">
+              <div className="p-6 md:p-8 border-b border-border-subtle">
+                <h2 className="text-2xl font-semibold tracking-tight mb-2">{product.name}</h2>
+                <p className="text-base text-text-secondary leading-relaxed max-w-[55ch]">
+                  {product.description}
+                </p>
+                <div className="flex flex-wrap gap-3 mt-4">
+                  <span className="text-xs text-text-muted bg-surface-raised border border-border-subtle px-3 py-1.5 rounded-full">
                     {product.dimensions}
                   </span>
-                </span>
-                <span className={styles.productMetaItem}>
-                  {product.material}
-                </span>
+                  <span className="text-xs text-text-muted bg-surface-raised border border-border-subtle px-3 py-1.5 rounded-full">
+                    {product.material}
+                  </span>
+                </div>
               </div>
 
-              <div className={styles.placements}>
-                <ul className={styles.placementList}>
-                  {product.placements.map((placement) => (
-                    <li
-                      key={placement.zone}
-                      className={styles.placementItem}
-                    >
-                      <span className={styles.placementZone}>
-                        {placement.zone}
-                      </span>
-                      <span className={styles.placementPrice}>
-                        fra {formatOreAsDkk(placement.priceFrom)} kr./stk.
-                      </span>
-                      <span className={styles.placementDescription}>
-                        {placement.description}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+              <div className="divide-y divide-border-subtle">
+                {product.placements.map((placement) => (
+                  <div key={placement.zone} className="p-6 md:px-8 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+                    <span className="text-sm font-medium text-text w-40 flex-shrink-0">
+                      {placement.zone}
+                    </span>
+                    <span className="text-sm text-accent font-medium w-36 flex-shrink-0">
+                      fra {formatOreAsDkk(placement.priceFrom)} kr./stk.
+                    </span>
+                    <span className="text-sm text-text-secondary leading-relaxed">
+                      {placement.description}
+                    </span>
+                  </div>
+                ))}
               </div>
             </article>
           ))}
         </div>
       </section>
 
-      <section className={styles.compliance}>
-        <div className="container container--narrow">
-          <h2 className={styles.complianceTitle}>
+      <section className="pb-20 md:pb-28">
+        <div className="container max-w-narrow">
+          <h2 className="text-xl font-semibold tracking-tight mb-6">
             {content.compliance.title}
           </h2>
-          <ul className={styles.complianceList}>
+          <ul className="space-y-3">
             {content.compliance.items.map((item) => (
-              <li key={item} className={styles.complianceItem}>
-                <span className={styles.complianceCheck} aria-hidden="true">
-                  &#x2713;
-                </span>
+              <li key={item} className="flex items-start gap-3 text-sm text-text-secondary">
+                <span className="text-emerald-400 mt-0.5 flex-shrink-0" aria-hidden="true">&#x2713;</span>
                 {item}
               </li>
             ))}

@@ -5,7 +5,6 @@ import { Logo } from '@/components/shared/Logo';
 import { useContent } from '@/hooks/useLanguage';
 import daCommon from '@/content/da/common.json';
 import enCommon from '@/content/en/common.json';
-import styles from './Footer.module.css';
 
 const NAV_LINKS = [
   { href: '/produkter', key: 'products' },
@@ -21,55 +20,75 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className={styles.footer}>
-      <div className={`container ${styles.top}`}>
-        <div className={styles.brand}>
-          <Logo />
-          <p className={styles.parent}>{content.footer.parent}</p>
-        </div>
+    <footer className="border-t border-border pt-12 pb-8">
+      <div className="container">
+        {/* Top grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10">
+          {/* Brand */}
+          <div className="flex flex-col gap-2">
+            <Logo />
+            <p className="text-sm text-text-muted">{content.footer.parent}</p>
+          </div>
 
-        <nav className={styles.navColumn}>
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.key}
-              href={link.href}
-              className={styles.navLink}
+          {/* Nav */}
+          <nav className="flex flex-col gap-2">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.key}
+                href={link.href}
+                className="text-sm text-text-secondary hover:text-text transition-colors duration-150 w-fit"
+              >
+                {content.nav[link.key as keyof typeof content.nav]}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Contact */}
+          <div className="flex flex-col gap-1">
+            <a
+              href={`mailto:${content.contact.email}`}
+              className="text-sm text-text-secondary hover:text-text transition-colors duration-150 w-fit"
             >
-              {content.nav[link.key as keyof typeof content.nav]}
+              {content.contact.email}
+            </a>
+            <a
+              href={`tel:${content.contact.phone}`}
+              className="text-sm text-text-secondary hover:text-text transition-colors duration-150 w-fit"
+            >
+              {content.contact.phoneDisplay}
+            </a>
+            <p className="text-sm text-text-muted mt-1">{content.contact.location}</p>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-t border-border pt-6">
+          <div className="flex items-center gap-2 text-xs text-text-muted flex-wrap">
+            <span>{content.footer.cvr}</span>
+            <span className="select-none opacity-40">·</span>
+            <Link
+              href="/privatlivspolitik"
+              className="text-text-secondary hover:text-text transition-colors duration-150"
+            >
+              {content.footer.privacy}
             </Link>
-          ))}
-        </nav>
-
-        <div className={styles.contactColumn}>
-          <a href={`mailto:${content.contact.email}`} className={styles.navLink}>
-            {content.contact.email}
-          </a>
-          <a href={`tel:${content.contact.phone}`} className={styles.navLink}>
-            {content.contact.phoneDisplay}
-          </a>
-          <p className={styles.location}>{content.contact.location}</p>
+            <span className="select-none opacity-40">·</span>
+            <Link
+              href="/cookies"
+              className="text-text-secondary hover:text-text transition-colors duration-150"
+            >
+              {content.footer.cookies}
+            </Link>
+          </div>
+          <p className="text-xs text-text-muted">
+            &copy; {year} BudMedia. {content.footer.rights}
+          </p>
         </div>
-      </div>
 
-      <div className={`container ${styles.bottom}`}>
-        <div className={styles.bottomLeft}>
-          <span>{content.footer.cvr}</span>
-          <span className={styles.separator}>·</span>
-          <Link href="/privatlivspolitik" className={styles.bottomLink}>
-            {content.footer.privacy}
-          </Link>
-          <span className={styles.separator}>·</span>
-          <Link href="/cookies" className={styles.bottomLink}>
-            {content.footer.cookies}
-          </Link>
+        {/* SDG */}
+        <div className="pt-4">
+          <p className="text-xs text-text-muted">{content.footer.sdg}</p>
         </div>
-        <p className={styles.rights}>
-          &copy; {year} BudMedia. {content.footer.rights}
-        </p>
-      </div>
-
-      <div className={`container ${styles.sdgRow}`}>
-        <p className={styles.sdg}>{content.footer.sdg}</p>
       </div>
     </footer>
   );

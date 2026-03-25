@@ -5,7 +5,6 @@ import { useContent } from '@/hooks/useLanguage';
 import { FORMSPREE_ENDPOINT } from '@/lib/constants';
 import daLanding from '@/content/da/landing.json';
 import enLanding from '@/content/en/landing.json';
-import styles from './contact.module.css';
 
 export function ContactCTA() {
   const content = useContent(daLanding, enLanding);
@@ -29,37 +28,82 @@ export function ContactCTA() {
   }
 
   return (
-    <section id="kontakt" className={styles.section}>
+    <section id="kontakt" className="py-20 md:py-28 bg-surface">
       <div className="container">
-        <h2 className={styles.headline}>{content.contactCta.title}</h2>
+        <h2 className="text-3xl font-semibold tracking-tight mb-10 md:mb-14 max-w-lg">
+          {content.contactCta.title}
+        </h2>
 
         {status === 'success' ? (
-          <div className={styles.formContainer}>
-            <p className={styles.success}>{content.contactCta.success}</p>
+          <div className="max-w-xl bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-8">
+            <p className="text-emerald-400 text-base">
+              {content.contactCta.success}
+            </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className={styles.formContainer}>
-            <div className={styles.row}>
-              <div className={styles.field}>
-                <label className={styles.label}>{content.contactCta.namePlaceholder}</label>
-                <input type="text" name="name" required autoComplete="name" className={styles.input} />
+          <form onSubmit={handleSubmit} className="max-w-xl space-y-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div className="flex flex-col gap-2">
+                <label className="text-xs text-text-muted font-medium tracking-wide uppercase">
+                  {content.contactCta.namePlaceholder}
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  autoComplete="name"
+                />
               </div>
-              <div className={styles.field}>
-                <label className={styles.label}>{content.contactCta.companyPlaceholder}</label>
-                <input type="text" name="company" autoComplete="organization" className={styles.input} />
+              <div className="flex flex-col gap-2">
+                <label className="text-xs text-text-muted font-medium tracking-wide uppercase">
+                  {content.contactCta.companyPlaceholder}
+                </label>
+                <input
+                  type="text"
+                  name="company"
+                  autoComplete="organization"
+                />
               </div>
             </div>
-            <div className={styles.field}>
-              <label className={styles.label}>{content.contactCta.emailPlaceholder}</label>
-              <input type="email" name="email" required autoComplete="email" className={styles.input} />
+
+            <div className="flex flex-col gap-2">
+              <label className="text-xs text-text-muted font-medium tracking-wide uppercase">
+                {content.contactCta.emailPlaceholder}
+              </label>
+              <input
+                type="email"
+                name="email"
+                required
+                autoComplete="email"
+              />
             </div>
-            <div className={styles.field}>
-              <label className={styles.label}>{content.contactCta.messagePlaceholder}</label>
-              <textarea name="message" required className={styles.textarea} />
+
+            <div className="flex flex-col gap-2">
+              <label className="text-xs text-text-muted font-medium tracking-wide uppercase">
+                {content.contactCta.messagePlaceholder}
+              </label>
+              <textarea name="message" required rows={5} />
             </div>
-            {status === 'error' && <p className={styles.error}>{content.contactCta.error}</p>}
-            <button type="submit" className={styles.submit} disabled={status === 'sending'}>
-              {status === 'sending' ? content.contactCta.sending : content.contactCta.submit}
+
+            {status === 'error' && (
+              <p className="text-sm text-red-400 bg-red-400/10 border border-red-400/20 rounded-lg px-4 py-3">
+                {content.contactCta.error}
+              </p>
+            )}
+
+            <button
+              type="submit"
+              className="btn-primary"
+              disabled={status === 'sending'}
+            >
+              {status === 'sending' ? (
+                <span className="flex items-center gap-2">
+                  <span className="w-4 h-4 border-2 border-accent-text/30 border-t-accent-text rounded-full animate-spin" />
+                  {content.contactCta.sending}
+                </span>
+              ) : (
+                content.contactCta.submit
+              )}
             </button>
           </form>
         )}

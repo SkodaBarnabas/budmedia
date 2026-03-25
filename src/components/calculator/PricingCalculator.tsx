@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { usePricingCalculator } from '@/hooks/usePricingCalculator';
 import { formatOreAsDkk, formatNumber } from '@/lib/utils';
-import styles from './calculator.module.css';
 
 interface Placement {
   zone: string;
@@ -52,38 +51,37 @@ export function PricingCalculator({ products, labels }: PricingCalculatorProps) 
     : '';
 
   return (
-    <div className={styles.calculator}>
-      <h2 className={styles.title}>{labels.title}</h2>
+    <div className="rounded-xl border border-border-subtle overflow-hidden">
+      <h2 className="text-xl font-semibold tracking-tight p-6 md:p-8 border-b border-border-subtle">
+        {labels.title}
+      </h2>
 
-      <div className={styles.grid}>
-        <div className={styles.controls}>
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        {/* Controls */}
+        <div className="p-6 md:p-8 space-y-5 border-b md:border-b-0 md:border-r border-border-subtle">
           {/* Product select */}
-          <div className={styles.field}>
-            <label className={styles.label} htmlFor="calc-product">
+          <div className="flex flex-col gap-2">
+            <label className="text-xs text-text-muted font-medium tracking-wide uppercase" htmlFor="calc-product">
               {labels.productLabel}
             </label>
             <select
               id="calc-product"
-              className={styles.select}
               value={calc.productIndex}
               onChange={(e) => calc.setProductIndex(Number(e.target.value))}
             >
               {products.map((p, i) => (
-                <option key={p.key} value={i}>
-                  {p.name}
-                </option>
+                <option key={p.key} value={i}>{p.name}</option>
               ))}
             </select>
           </div>
 
           {/* Placement select */}
-          <div className={styles.field}>
-            <label className={styles.label} htmlFor="calc-placement">
+          <div className="flex flex-col gap-2">
+            <label className="text-xs text-text-muted font-medium tracking-wide uppercase" htmlFor="calc-placement">
               {labels.placementLabel}
             </label>
             <select
               id="calc-placement"
-              className={styles.select}
               value={calc.placementIndex}
               onChange={(e) => calc.setPlacementIndex(Number(e.target.value))}
             >
@@ -96,15 +94,19 @@ export function PricingCalculator({ products, labels }: PricingCalculatorProps) 
           </div>
 
           {/* Quantity presets */}
-          <div className={styles.field}>
-            <span className={styles.label}>{labels.quantityLabel}</span>
-            <div className={styles.presets}>
+          <div className="flex flex-col gap-2">
+            <span className="text-xs text-text-muted font-medium tracking-wide uppercase">
+              {labels.quantityLabel}
+            </span>
+            <div className="flex gap-2">
               {QUANTITY_PRESETS.map((q) => (
                 <button
                   key={q}
                   type="button"
-                  className={`${styles.presetBtn} ${
-                    calc.quantity === q ? styles.presetBtnActive : ''
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-150 ${
+                    calc.quantity === q
+                      ? 'bg-accent text-accent-text'
+                      : 'bg-surface-raised text-text-secondary border border-border-subtle hover:border-border'
                   }`}
                   onClick={() => calc.setQuantity(q)}
                 >
@@ -115,56 +117,46 @@ export function PricingCalculator({ products, labels }: PricingCalculatorProps) 
           </div>
 
           {/* Restaurants */}
-          <div className={styles.field}>
-            <label className={styles.label} htmlFor="calc-restaurants">
+          <div className="flex flex-col gap-2">
+            <label className="text-xs text-text-muted font-medium tracking-wide uppercase" htmlFor="calc-restaurants">
               {labels.restaurantsLabel}
             </label>
             <select
               id="calc-restaurants"
-              className={styles.select}
               value={calc.restaurants}
               onChange={(e) => calc.setRestaurants(Number(e.target.value))}
             >
-              {Array.from({ length: RESTAURANT_MAX }, (_, i) => i + 1).map(
-                (n) => (
-                  <option key={n} value={n}>
-                    {n}
-                  </option>
-                ),
-              )}
+              {Array.from({ length: RESTAURANT_MAX }, (_, i) => i + 1).map((n) => (
+                <option key={n} value={n}>{n}</option>
+              ))}
             </select>
           </div>
         </div>
 
         {/* Results */}
-        <div className={styles.results}>
-          <span className={styles.resultsEyebrow}>{labels.resultTitle}</span>
+        <div className="p-6 md:p-8 bg-surface flex flex-col gap-5">
+          <span className="eyebrow">{labels.resultTitle}</span>
 
           {calc.result && (
             <>
-              <div className={styles.resultRow}>
-                <span className={styles.resultLabel}>
-                  {labels.monthlyTotal}
-                </span>
-                <span className={styles.resultValue}>
+              <div className="flex items-baseline justify-between border-b border-border-subtle pb-4">
+                <span className="text-sm text-text-secondary">{labels.monthlyTotal}</span>
+                <span className="text-2xl font-semibold tracking-tight text-text">
                   {formatNumber(calc.result.monthlyCostDkk)} kr.
                 </span>
               </div>
 
-              <div className={styles.resultRow}>
-                <span className={styles.resultLabel}>
-                  {labels.estimatedImpressions}
-                </span>
-                <span className={styles.resultValue}>
+              <div className="flex items-baseline justify-between border-b border-border-subtle pb-4">
+                <span className="text-sm text-text-secondary">{labels.estimatedImpressions}</span>
+                <span className="text-xl font-semibold tracking-tight text-text">
                   {formatNumber(calc.result.estimatedImpressions)}
                 </span>
               </div>
 
-              <p className={styles.comparison}>{comparisonText}</p>
+              <p className="text-xs text-text-muted leading-relaxed">{comparisonText}</p>
+              <p className="text-xs text-text-muted/60 italic">{labels.impressionsNote}</p>
 
-              <p className={styles.note}>{labels.impressionsNote}</p>
-
-              <Link href="/kontakt" className={`btn-primary ${styles.cta}`}>
+              <Link href="/kontakt" className="btn-primary mt-2 justify-center text-center">
                 {labels.getQuote}
               </Link>
             </>

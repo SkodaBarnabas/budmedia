@@ -3,7 +3,6 @@
 import { useContent } from '@/hooks/useLanguage';
 import daPages from '@/content/da/pages.json';
 import enPages from '@/content/en/pages.json';
-import styles from './presse.module.css';
 
 export function PresseContent() {
   const content = useContent(daPages, enPages);
@@ -11,21 +10,28 @@ export function PresseContent() {
 
   return (
     <>
-      <section className={styles.header}>
+      <section className="pt-32 pb-12 md:pt-40 md:pb-16">
         <div className="container">
-          <h1>{press.title}</h1>
-          <p className={styles.subtitle}>{press.subtitle}</p>
+          <h1 className="text-display font-semibold tracking-tighter">{press.title}</h1>
+          <p className="text-lg text-text-secondary mt-4 max-w-[50ch] leading-relaxed">
+            {press.subtitle}
+          </p>
         </div>
       </section>
 
-      <section className={styles.stats}>
+      {/* Stats */}
+      <section className="pb-16">
         <div className="container">
-          <h2 className={styles.statsTitle}>{press.stats.title}</h2>
-          <div className={styles.statsGrid}>
+          <h2 className="text-xl font-semibold tracking-tight mb-8">{press.stats.title}</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border rounded-xl overflow-hidden">
             {press.stats.items.map((item) => (
-              <div key={item.label} className={styles.statItem}>
-                <span className={styles.statValue}>{item.value}</span>
-                <span className={styles.statLabel}>{item.label}</span>
+              <div key={item.label} className="bg-bg p-6 md:p-8 text-center">
+                <span className="block text-2xl md:text-3xl font-semibold tracking-tight text-accent mb-1">
+                  {item.value}
+                </span>
+                <span className="text-xs text-text-muted uppercase tracking-wide">
+                  {item.label}
+                </span>
               </div>
             ))}
           </div>
@@ -34,14 +40,19 @@ export function PresseContent() {
 
       <hr className="divider" />
 
-      <section className={styles.timeline}>
-        <div className="container container--narrow">
-          <h2 className={styles.timelineTitle}>{press.timeline.title}</h2>
-          <ol className={styles.timelineList}>
+      {/* Timeline */}
+      <section className="py-16">
+        <div className="container max-w-narrow">
+          <h2 className="text-xl font-semibold tracking-tight mb-8">{press.timeline.title}</h2>
+          <ol className="space-y-0 divide-y divide-border-subtle">
             {press.timeline.items.map((item, i) => (
-              <li key={i} className={styles.timelineItem}>
-                <span className={styles.timelineDate}>{item.date}</span>
-                <span className={styles.timelineEvent}>{item.event}</span>
+              <li key={i} className="flex items-start gap-6 py-4">
+                <span className="text-xs text-text-muted font-medium tracking-wide w-24 flex-shrink-0 pt-0.5">
+                  {item.date}
+                </span>
+                <span className="text-sm text-text-secondary leading-relaxed">
+                  {item.event}
+                </span>
               </li>
             ))}
           </ol>
@@ -50,27 +61,31 @@ export function PresseContent() {
 
       <hr className="divider" />
 
-      <section className={styles.founder}>
-        <div className="container container--narrow">
-          <h2 className={styles.founderTitle}>{press.founder.title}</h2>
-          <div className={styles.founderRow}>
-            <div className={styles.founderPhoto}>
+      {/* Founder */}
+      <section className="py-16">
+        <div className="container max-w-narrow">
+          <h2 className="text-xl font-semibold tracking-tight mb-6">{press.founder.title}</h2>
+          <div className="flex flex-col sm:flex-row gap-6 items-start">
+            <div className="w-16 h-16 rounded-full bg-surface-raised border border-border flex items-center justify-center flex-shrink-0 overflow-hidden relative">
               <img
                 src="/images/founder.jpg"
                 alt={press.founder.name}
-                className={styles.founderImg}
+                className="w-full h-full object-cover absolute inset-0"
                 onError={(e) => {
                   (e.currentTarget as HTMLImageElement).style.display = 'none';
                 }}
               />
-              <span className={styles.founderInitials} aria-hidden="true">BS</span>
+              <span className="text-sm text-text-muted font-medium" aria-hidden="true">BS</span>
             </div>
-            <div className={styles.founderInfo}>
-              <p className={styles.founderName}>{press.founder.name}</p>
-              <p className={styles.founderBio}>{press.founder.bio}</p>
-              <p className={styles.founderContact}>
-                <a href={`mailto:${press.founder.contact}`}>{press.founder.contact}</a>
-              </p>
+            <div>
+              <p className="text-base font-semibold mb-1">{press.founder.name}</p>
+              <p className="text-sm text-text-secondary leading-relaxed mb-2">{press.founder.bio}</p>
+              <a
+                href={`mailto:${press.founder.contact}`}
+                className="text-sm text-accent hover:text-accent-hover transition-colors"
+              >
+                {press.founder.contact}
+              </a>
             </div>
           </div>
         </div>
@@ -78,10 +93,11 @@ export function PresseContent() {
 
       <hr className="divider" />
 
-      <section className={styles.assets}>
-        <div className="container container--narrow">
-          <h2 className={styles.assetsTitle}>{press.assets.title}</h2>
-          <p className={styles.assetsDescription}>{press.assets.description}</p>
+      {/* Press assets */}
+      <section className="py-16 pb-20 md:pb-28">
+        <div className="container max-w-narrow">
+          <h2 className="text-xl font-semibold tracking-tight mb-3">{press.assets.title}</h2>
+          <p className="text-sm text-text-secondary leading-relaxed mb-6">{press.assets.description}</p>
           <a
             href="/files/budmedia-media-kit.pdf"
             className="btn-secondary"

@@ -1,26 +1,25 @@
 import type { Metadata } from 'next';
-import { Cormorant_Garamond, Plus_Jakarta_Sans } from 'next/font/google';
+import Script from 'next/script';
+import { Outfit, Fraunces } from 'next/font/google';
 import { LanguageProvider } from '@/hooks/useLanguage';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { PLAUSIBLE_DOMAIN } from '@/lib/constants';
 import './globals.css';
 
-const serif = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  style: ['normal', 'italic'],
-  variable: '--font-serif',
-  display: 'swap',
-  fallback: ['Georgia', 'Times New Roman', 'serif'],
-});
-
-const sans = Plus_Jakarta_Sans({
+const outfit = Outfit({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-sans',
   display: 'swap',
   fallback: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+});
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  weight: ['600', '700'],
+  variable: '--font-display',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -56,15 +55,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="da" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="da" className={`${outfit.variable} ${fraunces.variable}`}>
       <head>
         <script
           defer
           data-domain={PLAUSIBLE_DOMAIN}
           src="https://plausible.io/js/script.js"
         />
+        <Script
+          src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"
+          strategy="beforeInteractive"
+        />
       </head>
-      <body>
+      <body className="font-sans">
         <LanguageProvider>
           <Header />
           <main>{children}</main>

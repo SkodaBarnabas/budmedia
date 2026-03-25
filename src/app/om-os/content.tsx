@@ -3,7 +3,6 @@
 import { useContent } from '@/hooks/useLanguage';
 import daPages from '@/content/da/pages.json';
 import enPages from '@/content/en/pages.json';
-import styles from './om-os.module.css';
 
 export function OmOsContent() {
   const content = useContent(daPages, enPages);
@@ -11,50 +10,49 @@ export function OmOsContent() {
 
   return (
     <>
-      <section className={styles.header}>
-        <div className="container container--narrow">
-          <h1>{about.title}</h1>
-          <p className={styles.intro}>{about.intro}</p>
+      <section className="pt-32 pb-12 md:pt-40 md:pb-16">
+        <div className="container max-w-narrow">
+          <h1 className="text-display font-semibold tracking-tighter">{about.title}</h1>
+          <p className="text-lg text-text-secondary mt-4 leading-relaxed">{about.intro}</p>
         </div>
       </section>
 
-      <section className={styles.section}>
-        <div className="container container--narrow">
-          <h2 className={styles.sectionTitle}>{about.mission.title}</h2>
-          <p className={styles.sectionText}>{about.mission.text}</p>
-        </div>
-      </section>
-
-      <hr className="divider" />
-
-      <section className={styles.section}>
-        <div className="container container--narrow">
-          <h2 className={styles.sectionTitle}>{about.parent.title}</h2>
-          <p className={styles.sectionText}>{about.parent.text}</p>
+      <section className="pb-12">
+        <div className="container max-w-narrow">
+          <h2 className="text-xl font-semibold tracking-tight mb-4">{about.mission.title}</h2>
+          <p className="text-base text-text-secondary leading-relaxed">{about.mission.text}</p>
         </div>
       </section>
 
       <hr className="divider" />
 
-      <section className={styles.section}>
-        <div className="container container--narrow">
-          <h2 className={styles.sectionTitle}>{about.founder.title}</h2>
-          <div className={styles.founderRow}>
-            <div className={styles.founderPhoto}>
-              {/* Replace /images/founder.jpg with actual photo */}
+      <section className="py-12">
+        <div className="container max-w-narrow">
+          <h2 className="text-xl font-semibold tracking-tight mb-4">{about.parent.title}</h2>
+          <p className="text-base text-text-secondary leading-relaxed">{about.parent.text}</p>
+        </div>
+      </section>
+
+      <hr className="divider" />
+
+      <section className="py-12">
+        <div className="container max-w-narrow">
+          <h2 className="text-xl font-semibold tracking-tight mb-6">{about.founder.title}</h2>
+          <div className="flex flex-col sm:flex-row gap-6 items-start">
+            <div className="w-16 h-16 rounded-full bg-surface-raised border border-border flex items-center justify-center flex-shrink-0 overflow-hidden relative">
               <img
                 src="/images/founder.jpg"
                 alt={about.founder.name}
-                className={styles.founderImg}
+                className="w-full h-full object-cover absolute inset-0"
                 onError={(e) => {
                   (e.currentTarget as HTMLImageElement).style.display = 'none';
                 }}
               />
-              <span className={styles.founderInitials} aria-hidden="true">BS</span>
+              <span className="text-sm text-text-muted font-medium" aria-hidden="true">BS</span>
             </div>
-            <div className={styles.founderInfo}>
-              <p className={styles.founderName}>{about.founder.name}</p>
-              <p className={styles.sectionText}>{about.founder.text}</p>
+            <div>
+              <p className="text-base font-semibold mb-2">{about.founder.name}</p>
+              <p className="text-base text-text-secondary leading-relaxed">{about.founder.text}</p>
             </div>
           </div>
         </div>
@@ -62,10 +60,10 @@ export function OmOsContent() {
 
       <hr className="divider" />
 
-      <section className={styles.section}>
-        <div className="container container--narrow">
-          <h2 className={styles.sectionTitle}>{about.location.title}</h2>
-          <p className={styles.sectionText}>{about.location.text}</p>
+      <section className="py-12 pb-20 md:pb-28">
+        <div className="container max-w-narrow">
+          <h2 className="text-xl font-semibold tracking-tight mb-4">{about.location.title}</h2>
+          <p className="text-base text-text-secondary leading-relaxed">{about.location.text}</p>
         </div>
       </section>
     </>
