@@ -1,7 +1,7 @@
 {
   "pricing": {
     "meta": {
-      "title": "Priser — BudMedia",
+      "title": "Priser — BoxSpot",
       "description": "Se hvad det koster at annoncere på pizzabakker. Interaktiv prisberegner. Sammenlign med Facebook og Google Ads."
     },
     "title": "Priser",
@@ -29,8 +29,8 @@
   },
   "restaurants": {
     "meta": {
-      "title": "Gratis emballage til restauranter — BudMedia",
-      "description": "Få gratis emballage med dit logo og branding. Ingen kontrakt, ingen omkostning. BudMedia leverer direkte til din restaurant."
+      "title": "Gratis emballage til restauranter — BoxSpot",
+      "description": "Få gratis emballage med dit logo og branding. Ingen kontrakt, ingen omkostning. BoxSpot leverer direkte til din restaurant."
     },
     "title": "Gratis emballage til din restaurant",
     "subtitle": "Du betaler allerede for bakker. Vi giver dig bedre — uden omkostning.",
@@ -60,33 +60,33 @@
   },
   "about": {
     "meta": {
-      "title": "Om os — BudMedia",
-      "description": "BudMedia er et brand under BudGruppen. Vi forbinder lokale annoncører med lokale restauranter gennem emballage."
+      "title": "Om os — BoxSpot",
+      "description": "BoxSpot er et brand under SeedWork Co.. Vi forbinder lokale annoncører med lokale restauranter gennem emballage."
     },
-    "title": "Om BudMedia",
-    "intro": "BudMedia gør emballage til et reklamemedie. Restauranter får gratis, professionelt trykt emballage. Annoncører får fysisk synlighed i lokale hjem. Pengene bliver i lokalsamfundet.",
+    "title": "Om BoxSpot",
+    "intro": "BoxSpot gør emballage til et reklamemedie. Restauranter får gratis, professionelt trykt emballage. Annoncører får fysisk synlighed i lokale hjem. Pengene bliver i lokalsamfundet.",
     "mission": {
       "title": "Lokal værdi",
-      "text": "Hvert år sender danske virksomheder millioner af kroner til internationale annonceplatforme. Det meste rammer folk der aldrig sætter fod i butikken. BudMedia giver lokale virksomheder adgang til reklame der rent faktisk rammer deres naboer — på køkkenbordet, ikke i et feed. Emballagen eksisterer allerede. Vi giver den et formål ud over at holde på varmen."
+      "text": "Hvert år sender danske virksomheder millioner af kroner til internationale annonceplatforme. Det meste rammer folk der aldrig sætter fod i butikken. BoxSpot giver lokale virksomheder adgang til reklame der rent faktisk rammer deres naboer — på køkkenbordet, ikke i et feed. Emballagen eksisterer allerede. Vi giver den et formål ud over at holde på varmen."
     },
     "parent": {
-      "title": "BudGruppen",
-      "text": "BudMedia er et brand under BudGruppen (CVR 46232194), der også driver MadBud.dk — en etisk madleveringsplatform med faste ansættelser i stedet for gig-økonomi. Begge brands arbejder med at styrke lokale økonomier i danske byer."
+      "title": "SeedWork Co.",
+      "text": "BoxSpot er et brand under SeedWork Co. (CVR 46232194), der også driver MadBud.dk — en etisk madleveringsplatform med faste ansættelser i stedet for gig-økonomi. Begge brands arbejder med at styrke lokale økonomier i danske byer."
     },
     "founder": {
       "title": "Grundlægger",
       "name": "Barnabás Skoda",
-      "text": "Studerende på Elektronik Engineering ved Syddansk Universitet (SDU) i Sønderborg. Medlem af SDU Startup Station. Grundlægger af BudGruppen. Startede BudMedia for at give lokale virksomheder et reelt alternativ til digital annoncering — og for at give restauranter bedre emballage uden omkostning."
+      "text": "Studerende på Elektronik Engineering ved Syddansk Universitet (SDU) i Sønderborg. Medlem af SDU Startup Station. Grundlægger af SeedWork Co.. Startede BoxSpot for at give lokale virksomheder et reelt alternativ til digital annoncering — og for at give restauranter bedre emballage uden omkostning."
     },
     "location": {
       "title": "Placering",
-      "text": "BudMedia holder til i Sønderborg, Syddanmark. Støttet af SDU Startup Station. Opererer på tværs af Sønderborg, Nordborg og Aabenraa med nationale ambitioner."
+      "text": "BoxSpot holder til i Sønderborg, Syddanmark. Støttet af SDU Startup Station. Opererer på tværs af Sønderborg, Nordborg og Aabenraa med nationale ambitioner."
     }
   },
   "contact": {
     "meta": {
-      "title": "Kontakt — BudMedia",
-      "description": "Kontakt BudMedia for et tilbud på annoncering på pizzabakker eller gratis emballage til din restaurant."
+      "title": "Kontakt — BoxSpot",
+      "description": "Kontakt BoxSpot for et tilbud på annoncering på pizzabakker eller gratis emballage til din restaurant."
     },
     "title": "Kontakt",
     "subtitle": "Vi svarer inden for 24 timer.",
@@ -99,7 +99,7 @@
       "submit": "Send besked",
       "sending": "Sender...",
       "success": "Tak. Vi vender tilbage inden for 24 timer.",
-      "error": "Noget gik galt. Send en e-mail til kontakt@budmedia.dk direkte."
+      "error": "Noget gik galt. Send en e-mail til kontakt@boxspot.dk direkte."
     },
     "direct": {
       "title": "Direkte kontakt",
@@ -111,8 +111,8 @@
   },
   "press": {
     "meta": {
-      "title": "Presse — BudMedia",
-      "description": "Pressemateriale, nøgletal og brandaktiver for BudMedia."
+      "title": "Presse — BoxSpot",
+      "description": "Pressemateriale, nøgletal og brandaktiver for BoxSpot."
     },
     "title": "Presse",
     "subtitle": "Materiale til journalister, partnere og samarbejdspartnere.",
@@ -128,9 +128,9 @@
     "timeline": {
       "title": "Selskabshistorik",
       "items": [
-        { "date": "2024", "event": "BudGruppen stiftet (CVR 46232194)" },
+        { "date": "2024", "event": "SeedWork Co. stiftet (CVR 46232194)" },
         { "date": "2024", "event": "MadBud.dk lanceret — etisk madlevering i Sønderborg" },
-        { "date": "2025", "event": "BudMedia koncept udviklet. Leverandøraftale på plads." },
+        { "date": "2025", "event": "BoxSpot koncept udviklet. Leverandøraftale på plads." },
         { "date": "2025", "event": "Første annoncører tilmeldt: Yrden Media, CalibrisMedia" },
         { "date": "2025", "event": "38 restauranter kortlagt i Sønderborg, Nordborg, Aabenraa" }
       ]
@@ -138,8 +138,8 @@
     "founder": {
       "title": "Grundlægger",
       "name": "Barnabás Skoda",
-      "bio": "Studerende på Elektronik Engineering ved Syddansk Universitet (SDU) i Sønderborg. Medlem af SDU Startup Station. Grundlægger af BudGruppen, der driver BudMedia og MadBud.dk.",
-      "contact": "kontakt@budmedia.dk"
+      "bio": "Studerende på Elektronik Engineering ved Syddansk Universitet (SDU) i Sønderborg. Medlem af SDU Startup Station. Grundlægger af SeedWork Co., der driver BoxSpot og MadBud.dk.",
+      "contact": "kontakt@boxspot.dk"
     },
     "assets": {
       "title": "Brandmaterialer",
@@ -149,15 +149,15 @@
   },
   "privacy": {
     "meta": {
-      "title": "Privatlivspolitik — BudMedia",
-      "description": "Privatlivspolitik for BudMedia."
+      "title": "Privatlivspolitik — BoxSpot",
+      "description": "Privatlivspolitik for BoxSpot."
     },
     "title": "Privatlivspolitik",
     "lastUpdated": "Sidst opdateret: marts 2025",
     "sections": [
       {
         "title": "Dataansvarlig",
-        "text": "BudGruppen (CVR 46232194), Sønderborg, Danmark er dataansvarlig for behandling af personoplysninger på budmedia.dk."
+        "text": "SeedWork Co. (CVR 46232194), Sønderborg, Danmark er dataansvarlig for behandling af personoplysninger på boxspot.dk."
       },
       {
         "title": "Hvilke data vi indsamler",
@@ -181,7 +181,7 @@
       },
       {
         "title": "Dine rettigheder",
-        "text": "Du har ret til at se, rette eller slette dine personoplysninger. Kontakt os på kontakt@budmedia.dk."
+        "text": "Du har ret til at se, rette eller slette dine personoplysninger. Kontakt os på kontakt@boxspot.dk."
       }
     ]
   }

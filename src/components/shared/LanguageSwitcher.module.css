@@ -1,0 +1,36 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.btn {
+  padding: 0.25rem 0.375rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  transition: color 150ms ease;
+}
+
+.btnActive {
+  color: #F0EDE8;
+  font-weight: 500;
+}
+
+.btnInactive {
+  color: #888880;
+}
+
+.btnInactive:hover {
+  color: #F0EDE8;
+}
+
+.divider {
+  color: rgba(136, 136, 128, 0.4);
+  user-select: none;
+}

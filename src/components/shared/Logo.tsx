@@ -1,8 +1,14 @@
 export function Logo() {
   return (
-    <span className="text-xl font-semibold tracking-tight">
-      <span className="text-accent">Bud</span>
-      <span className="text-text">Media</span>
+    <span
+      style={{
+        fontSize: '1.25rem',
+        fontWeight: 500,
+        color: '#F0EDE8',
+        letterSpacing: '-0.01em',
+      }}
+    >
+      BoxSpot
     </span>
   );
 }

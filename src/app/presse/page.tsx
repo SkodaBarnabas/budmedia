@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { PresseContent } from './content';
 
 export const metadata: Metadata = {
-  title: 'Presse — BudMedia',
+  title: 'Presse — BoxSpot',
   description:
-    'Pressemateriale, nøgletal og brandaktiver for BudMedia.',
+    'Pressemateriale, nøgletal og brandaktiver for BoxSpot.',
 };
 
 export default function PressePage() {

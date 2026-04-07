@@ -1,142 +1,56 @@
 {
-  "meta": {
-    "title": "BudMedia — Annoncering på emballage",
-    "description": "BudMedia leverer gratis, professionelt trykt emballage til restauranter — finansieret af lokale annoncører. Din annonce fra 5 kr. pr. bakke."
-  },
   "hero": {
-    "eyebrow": "Annoncering på emballage",
-    "headline": "Din annonce på lokale pizzabakker",
-    "subheadline": "Fysisk reklame der sidder på køkkenbordet. Ikke i et feed.",
-    "ctaPrimary": "Få et tilbud",
-    "ctaSecondary": "Se hvordan det virker"
+    "headline": "Din emballage.\nAndres reklame.\nDit brand.",
+    "subline": "BoxSpot leverer gratis pizzaæsker med professionelt tryk — finansieret af lokale annoncører.",
+    "cta": "Bliv partner"
   },
-  "howItWorks": {
-    "title": "Tre trin",
-    "steps": [
-      {
-        "number": "01",
-        "title": "Vi designer din annonce",
-        "description": "Send dit logo. Vi laver et trykklar design der passer til emballagen."
-      },
-      {
-        "number": "02",
-        "title": "Vi producerer og leverer",
-        "description": "EU-certificeret produktion. Fødevaresikre materialer. Leveret direkte til restauranterne."
-      },
-      {
-        "number": "03",
-        "title": "Dine kunder holder den i hånden",
-        "description": "Hver bakke der forlader restauranten bærer din annonce ind i et lokalt hjem."
-      }
-    ]
-  },
-  "products": {
-    "title": "Produkter",
-    "items": [
-      {
-        "key": "pizzaBox",
-        "name": "Pizzabakker",
-        "description": "32 og 40 cm. Fuld farvetryk. Fødevaregodkendt.",
-        "priceFrom": "Fra 5 kr./stk."
-      },
-      {
-        "key": "deliveryBag",
-        "name": "Leveringsposer",
-        "description": "Papirposer med dit print. Til takeaway og levering.",
-        "priceFrom": "Fra 8 kr./stk."
-      },
-      {
-        "key": "wrappingPaper",
-        "name": "Indpakningspapir",
-        "description": "Fødevaresikkert papir med fuld overfladeprint.",
-        "priceFrom": "Fra 3 kr./stk."
-      }
-    ],
-    "cta": "Se alle produkter"
+  "scrollPanels": [
+    {
+      "label": "01",
+      "headline": "Gratis æsker med dit logo",
+      "body": "Du betaler ikke en krone. Vi leverer æsker med dit eget brand og professionelt tryk."
+    },
+    {
+      "label": "02",
+      "headline": "Annoncører betaler — ikke dig",
+      "body": "Lokale virksomheder køber annonceplads. Det finansierer dine æsker."
+    },
+    {
+      "label": "03",
+      "headline": "Direkte til dine kunder",
+      "body": "Hver levering er en reklame. Gennemsnitligt 2,8 seere per æske."
+    }
+  ],
+  "socialProof": [
+    { "number": "38", "label": "restauranter kortlagt" },
+    { "number": "2,8", "label": "seere per æske" },
+    { "number": "30+", "label": "minutter eksponering" }
+  ],
+  "offers": {
+    "restaurants": {
+      "eyebrow": "TIL RESTAURANTER",
+      "headline": "Gratis æsker. Professionelt tryk.",
+      "body": "Du får æsker med dit eget logo og design leveret uden beregning. Ingen kontrakt. Ingen minimumsordre. Hvis kvaliteten ikke overstiger dine nuværende æsker, samler vi resten op.",
+      "cta": "Læs mere →",
+      "href": "/restauranter"
+    },
+    "advertisers": {
+      "eyebrow": "TIL ANNONCØRER",
+      "headline": "Din annonce. 30 minutter på køkkenbordet.",
+      "body": "Ikke et sekund på et feed. Pizzaæsken bliver liggende. Gennemsnitligt 2,8 mennesker ser den. Ingen adblocker. Ingen scroll. Bare din reklame.",
+      "cta": "Se priser →",
+      "href": "/priser"
+    }
   },
   "comparison": {
-    "title": "Sammenlign med digitale annoncer",
-    "headers": ["", "BudMedia", "Facebook Ads", "Google Ads"],
+    "title": "BoxSpot vs. digital annoncering",
+    "columns": ["BoxSpot", "Facebook Ads", "Google Ads"],
     "rows": [
-      {
-        "label": "Pris pr. 1.000 visninger",
-        "values": ["~35 kr.", "50–150 kr.", "80–300 kr."]
-      },
-      {
-        "label": "Eksponeringstid",
-        "values": ["30+ minutter", "Under 1 sekund", "2–5 sekunder"]
-      },
-      {
-        "label": "Kan blokeres af adblockers",
-        "values": ["Nej", "Ja", "Ja"]
-      },
-      {
-        "label": "Når hele husstanden",
-        "values": ["Ja (2,8 personer gns.)", "Nej", "Nej"]
-      },
-      {
-        "label": "Opsætningstid for annoncør",
-        "values": ["Send dit logo", "Timer", "Timer"]
-      }
+      { "label": "Pris per 1.000 visninger", "values": ["~35 DKK", "50-150 DKK", "80-300 DKK"] },
+      { "label": "Eksponeringstid", "values": ["30+ min", "<1 sek", "2-5 sek"] },
+      { "label": "Adblocker", "values": ["Nej", "Ja", "Ja"] },
+      { "label": "Seere per enhed", "values": ["2,8", "1", "1"] },
+      { "label": "Opsætning", "values": ["Send dit logo", "Timer", "Timer"] }
     ]
-  },
-  "restaurantBrief": {
-    "title": "Gratis emballage til restauranter",
-    "description": "Vi leverer professionelt trykt emballage med dit logo og branding. Gratis. Ingen kontrakt. Ingen binding. Kvaliteten matcher eller overgår det du betaler for i dag.",
-    "cta": "Læs mere"
-  },
-  "serviceScope": {
-    "title": "Hvad er inkluderet",
-    "items": [
-      {
-        "title": "Annonceplads",
-        "description": "Din annonce trykt på det valgte antal bakker pr. måned, fordelt på dine valgte restauranter."
-      },
-      {
-        "title": "Professionelt annoncedesign",
-        "description": "Vi designer annoncen ud fra dit logo og dine brandmaterialer."
-      },
-      {
-        "title": "Restaurantmatch",
-        "description": "Vi vælger restauranter der passer til din målgruppe og dit lokalområde."
-      },
-      {
-        "title": "Månedlig distributionsrapport",
-        "description": "Hvor mange bakker er distribueret, estimerede visninger, dækningsområde."
-      },
-      {
-        "title": "Kvartalvis designopdatering",
-        "description": "Nyt annoncedesign hvert kvartal. Ingen ekstra omkostning."
-      }
-    ]
-  },
-  "boxShowcase": {
-    "eyebrow": "Produktet",
-    "headline": "Pizzabakken som reklameplads",
-    "description": "Restaurantens logo og branding på låget. Din annonce på sidepanelerne. Printet i fuld farve på fødevaresikker emballage.",
-    "specs": [
-      "32 × 32 × 4 cm",
-      "Fuld farve digitaltryk",
-      "E-bølge wellpap",
-      "Fødevaresikker & PFAS-fri",
-      "EU-certificeret produktion"
-    ],
-    "priceNote": "Annonceplads fra 5 kr. pr. bakke"
-  },
-  "aboutBrief": {
-    "title": "Om BudMedia",
-    "text": "BudMedia er et brand under BudGruppen. Vi forbinder lokale annoncører med lokale restauranter gennem emballage. Annonceindtægterne bliver i lokalsamfundet — ikke hos internationale platforme.",
-    "cta": "Læs mere om os"
-  },
-  "contactCta": {
-    "title": "Lad os tale om din næste kampagne",
-    "namePlaceholder": "Navn",
-    "companyPlaceholder": "Virksomhed",
-    "emailPlaceholder": "E-mail",
-    "messagePlaceholder": "Besked",
-    "submit": "Send besked",
-    "sending": "Sender...",
-    "success": "Tak for din besked. Vi vender tilbage inden for 24 timer.",
-    "error": "Noget gik galt. Prøv igen eller send en e-mail til kontakt@budmedia.dk."
   }
 }

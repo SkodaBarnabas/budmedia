@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Script from 'next/script';
 import { Outfit, Fraunces } from 'next/font/google';
 import { LanguageProvider } from '@/hooks/useLanguage';
 import { Header } from '@/components/layout/Header';
@@ -9,7 +8,7 @@ import './globals.css';
 
 const outfit = Outfit({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-sans',
   display: 'swap',
   fallback: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
@@ -24,29 +23,28 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: 'BudMedia — Annoncering på emballage',
-    template: '%s — BudMedia',
+    default: 'BoxSpot — Annoncering på emballage',
+    template: '%s — BoxSpot',
   },
   description:
-    'BudMedia leverer gratis, professionelt trykt emballage til restauranter — finansieret af lokale annoncører. Din annonce fra 5 kr. pr. bakke.',
-  metadataBase: new URL('https://budmedia.dk'),
+    'BoxSpot leverer gratis, professionelt trykt emballage til restauranter — finansieret af lokale annoncører.',
+  metadataBase: new URL('https://boxspot.dk'),
   openGraph: {
-    title: 'BudMedia — Annoncering på emballage',
+    title: 'BoxSpot — Annoncering på emballage',
     description:
-      'Fysisk reklame på pizzabakker hos lokale restauranter. Fra 5 kr. pr. bakke.',
-    url: 'https://budmedia.dk',
-    siteName: 'BudMedia',
+      'Fysisk reklame på pizzabakker hos lokale restauranter.',
+    url: 'https://boxspot.dk',
+    siteName: 'BoxSpot',
     locale: 'da_DK',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BudMedia — Annoncering på emballage',
-    description:
-      'Fysisk reklame på pizzabakker. Fra 5 kr. pr. bakke.',
+    title: 'BoxSpot — Annoncering på emballage',
+    description: 'Fysisk reklame på pizzabakker.',
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://budmedia.dk' },
+  alternates: { canonical: 'https://boxspot.dk' },
 };
 
 export default function RootLayout({
@@ -62,16 +60,8 @@ export default function RootLayout({
           data-domain={PLAUSIBLE_DOMAIN}
           src="https://plausible.io/js/script.js"
         />
-        <Script
-          src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"
-          strategy="beforeInteractive"
-        />
       </head>
-      <body className="font-sans">
+      <body>
         <LanguageProvider>
           <Header />
           <main>{children}</main>

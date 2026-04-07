@@ -1,0 +1,93 @@
+.section {
+  background: #0D0D0D;
+  padding-block: clamp(7rem, 12vw, 12rem);
+}
+
+.inner {
+  max-width: 800px;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 4rem);
+}
+
+.title {
+  font-size: clamp(1.875rem, 1.4rem + 2vw, 2.5rem);
+  font-weight: 500;
+  color: #F0EDE8;
+  text-align: center;
+  letter-spacing: -0.025em;
+  margin-bottom: clamp(2.5rem, 4vw, 4rem);
+}
+
+.tableWrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 580px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 1.125rem 1.25rem;
+  border-bottom: 1px solid #2A2A2A;
+  vertical-align: top;
+  font-size: 0.9375rem;
+}
+
+.table thead th {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #888880;
+  letter-spacing: 0.03em;
+  padding-bottom: 1.375rem;
+}
+
+.table tbody tr {
+  transition: background-color 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(240, 237, 232, 0.02);
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table td:first-child {
+  color: #888880;
+  font-size: 0.875rem;
+}
+
+.boxspotCol {
+  background: #1A1A1A;
+}
+
+.boxspotHeader {
+  color: #C8A96E;
+  font-weight: 600;
+  border-top: 2px solid #C8A96E;
+}
+
+.boxspotCell {
+  color: #F0EDE8;
+  font-weight: 500;
+}
+
+.otherCell {
+  color: #888880;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-block: 5rem;
+  }
+
+  .table {
+    min-width: 480px;
+  }
+}

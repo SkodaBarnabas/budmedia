@@ -2,19 +2,18 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Logo } from '@/components/shared/Logo';
 import { LanguageSwitcher } from '@/components/shared/LanguageSwitcher';
 import { MobileMenu } from './MobileMenu';
 import { useContent } from '@/hooks/useLanguage';
 import daCommon from '@/content/da/common.json';
 import enCommon from '@/content/en/common.json';
+import styles from './Header.module.css';
 
 const NAV_LINKS = [
-  { href: '/#produkt', key: 'products' },
-  { href: '/#hvordan', key: 'pricing' },
-  { href: '/#priser', key: 'restaurants' },
-  { href: '/#restauranter', key: 'about' },
-  { href: '/#kontakt', key: 'contact' },
+  { href: '/restauranter', key: 'restaurants' },
+  { href: '/annoncorer', key: 'advertisers' },
+  { href: '/priser', key: 'pricing' },
+  { href: '/kontakt', key: 'contact' },
 ] as const;
 
 export function Header() {
@@ -24,8 +23,7 @@ export function Header() {
 
   useEffect(() => {
     function handleScroll() {
-      const threshold = Math.max(window.innerHeight * 0.55, 140);
-      setScrolled(window.scrollY > threshold);
+      setScrolled(window.scrollY > 40);
     }
     handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -33,11 +31,7 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
     return () => {
       document.body.style.overflow = '';
     };
@@ -46,57 +40,38 @@ export function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,backdrop-filter,box-shadow] duration-500 ${
-          scrolled
-            ? 'bg-bg/74 backdrop-blur-2xl border-b border-white/[0.12] shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_14px_40px_rgba(0,0,0,0.35)]'
-            : 'bg-transparent border-b border-transparent'
-        }`}
+        className={`${styles.header} ${scrolled ? styles.headerScrolled : ''}`}
       >
-        <div className="flex items-center justify-between max-w-container mx-auto px-[var(--container-padding)] h-16">
-          <Link href="/" aria-label="BudMedia forside">
-            <Logo />
+        <div className={styles.inner}>
+          <Link href="/" className={styles.wordmark} aria-label="BoxSpot forside">
+            BoxSpot
           </Link>
 
-          {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.key}
-                href={link.href}
-                className="text-sm text-text-secondary hover:text-text transition-colors duration-150"
-              >
-                {content.nav[link.key as keyof typeof content.nav]}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Desktop actions */}
-          <div className="hidden md:flex items-center gap-5">
+          <div className={styles.desktopRight}>
+            <nav className={styles.desktopNav}>
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.key}
+                  href={link.href}
+                  className={styles.navLink}
+                >
+                  {content.nav[link.key as keyof typeof content.nav]}
+                </Link>
+              ))}
+            </nav>
             <LanguageSwitcher />
-            <Link href="/#kontakt" className="btn-primary">
-              {content.nav.cta}
-            </Link>
           </div>
 
-          {/* Mobile actions */}
-          <div className="flex md:hidden items-center gap-4">
+          <div className={styles.mobileActions}>
             <LanguageSwitcher />
             <button
-              className="flex flex-col justify-center items-center gap-1.5 w-8 h-8"
+              className={`${styles.burger} ${menuOpen ? styles.burgerOpen : ''}`}
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label={menuOpen ? 'Luk menu' : 'Åbn menu'}
               aria-expanded={menuOpen}
             >
-              <span
-                className={`block w-5 h-[1.5px] bg-text transition-transform duration-250 origin-center ${
-                  menuOpen ? 'translate-y-[3.75px] rotate-45' : ''
-                }`}
-              />
-              <span
-                className={`block w-5 h-[1.5px] bg-text transition-transform duration-250 origin-center ${
-                  menuOpen ? '-translate-y-[3.75px] -rotate-45' : ''
-                }`}
-              />
+              <span className={styles.burgerLine} />
+              <span className={styles.burgerLine} />
             </button>
           </div>
         </div>

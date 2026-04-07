@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { OmOsContent } from './content';
 
 export const metadata: Metadata = {
-  title: 'Om os — BudMedia',
+  title: 'Om os — BoxSpot',
   description:
-    'BudMedia er et brand under BudGruppen. Vi forbinder lokale annoncører med lokale restauranter gennem emballage.',
+    'BoxSpot er et brand under SeedWork Co.. Vi forbinder lokale annoncører med lokale restauranter gennem emballage.',
 };
 
 export default function OmOsPage() {

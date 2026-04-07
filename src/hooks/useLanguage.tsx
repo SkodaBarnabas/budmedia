@@ -18,7 +18,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('da');
 
   useEffect(() => {
-    const stored = localStorage.getItem('budmedia-lang');
+    const stored = localStorage.getItem('boxspot-lang');
     if (stored === 'da' || stored === 'en') {
       setLocaleState(stored);
       document.documentElement.lang = stored;
@@ -27,7 +27,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const setLocale = useCallback((newLocale: Locale) => {
     setLocaleState(newLocale);
-    localStorage.setItem('budmedia-lang', newLocale);
+    localStorage.setItem('boxspot-lang', newLocale);
     document.documentElement.lang = newLocale;
   }, []);
 

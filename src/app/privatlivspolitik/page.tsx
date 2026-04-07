@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { PrivatlivspolitikContent } from './content';
 
 export const metadata: Metadata = {
-  title: 'Privatlivspolitik — BudMedia',
-  description: 'Privatlivspolitik for BudMedia.',
+  title: 'Privatlivspolitik — BoxSpot',
+  description: 'Privatlivspolitik for BoxSpot.',
 };
 
 export default function PrivatlivspolitikPage() {

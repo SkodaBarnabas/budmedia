@@ -99,7 +99,7 @@ export function PresseContent() {
           <h2 className="text-xl font-semibold tracking-tight mb-3">{press.assets.title}</h2>
           <p className="text-sm text-text-secondary leading-relaxed mb-6">{press.assets.description}</p>
           <a
-            href="/files/budmedia-media-kit.pdf"
+            href="/files/boxspot-media-kit.pdf"
             className="btn-secondary"
             download
           >

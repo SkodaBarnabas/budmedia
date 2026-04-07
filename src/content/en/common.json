@@ -3,18 +3,20 @@
     "products": "Products",
     "pricing": "Pricing",
     "restaurants": "Restaurants",
+    "advertisers": "Advertisers",
     "about": "About",
     "contact": "Contact",
     "press": "Press",
-    "cta": "Get a quote"
+    "cta": "Become a partner"
   },
   "footer": {
-    "parent": "A brand by BudGruppen",
+    "parent": "A brand by SeedWork Co. (CVR 46232194)",
     "cvr": "CVR 46232194",
-    "sdg": "BudMedia contributes to UN Sustainable Development Goals 8, 9, 11, 12, 13.",
+    "sdg": "BoxSpot contributes to UN Sustainable Development Goals 8, 9, 11, 12, 13.",
     "privacy": "Privacy policy",
     "cookies": "Cookie policy",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "copyright": "© 2026 SeedWork Co. · boxspot.dk"
   },
   "currency": "DKK",
   "currencySymbol": "DKK",
@@ -22,9 +24,9 @@
   "perMonth": "per month",
   "from": "From",
   "contact": {
-    "email": "kontakt@budmedia.dk",
-    "phone": "+45 91 19 03 69",
-    "phoneDisplay": "91 19 03 69",
+    "email": "kontakt@boxspot.dk",
+    "phone": "+4591190369",
+    "phoneDisplay": "+45 91 19 03 69",
     "location": "Sønderborg, Denmark"
   }
 }
