@@ -1,6 +1,6 @@
 .section {
   background: #0D0D0D;
-  padding-block: clamp(7rem, 12vw, 12rem);
+  padding-block: clamp(8rem, 14vw, 14rem);
 }
 
 .inner {
@@ -8,15 +8,14 @@
   margin-inline: auto;
   padding-inline: clamp(1.5rem, 5vw, 4rem);
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
+  grid-template-columns: 1.1fr 1px 0.9fr;
   gap: clamp(2.5rem, 5vw, 5rem);
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding-block: 1rem;
+  gap: 1.75rem;
 }
 
 .eyebrow {
@@ -28,11 +27,11 @@
 }
 
 .headline {
-  font-size: clamp(1.625rem, 1.3rem + 1.2vw, 2.125rem);
+  font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.25rem);
   font-weight: 500;
   color: #F0EDE8;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
 }
 
 .body {
@@ -70,12 +69,12 @@
 
 @media (max-width: 768px) {
   .section {
-    padding-block: 5rem;
+    padding-block: 6rem;
   }
 
   .inner {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 4rem;
   }
 
   .divider {

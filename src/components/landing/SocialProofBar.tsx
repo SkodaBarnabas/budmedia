@@ -10,10 +10,10 @@ export function SocialProofBar() {
   const content = useContent(daLanding, enLanding);
 
   return (
-    <section className={styles.bar}>
+    <section className={styles.section}>
       <div className={styles.inner}>
         {content.socialProof.map((stat, i) => (
-          <Reveal key={stat.label} delay={i * 120} className={styles.stat}>
+          <Reveal key={stat.label} delay={i * 150} className={styles.metric}>
             <span className={styles.number}>{stat.number}</span>
             <span className={styles.label}>{stat.label}</span>
           </Reveal>

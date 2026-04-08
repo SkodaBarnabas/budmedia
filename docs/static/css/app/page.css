@@ -1,0 +1,536 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/landing/ComparisonSection.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.ComparisonSection_section__k9jtj {
+  background: #0D0D0D;
+  padding-block: clamp(8rem, 14vw, 14rem);
+}
+
+.ComparisonSection_inner__SIt60 {
+  max-width: 800px;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 4rem);
+}
+
+.ComparisonSection_title__Mb_Lu {
+  font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem);
+  font-weight: 500;
+  color: #F0EDE8;
+  text-align: center;
+  letter-spacing: -0.03em;
+  margin-bottom: clamp(3rem, 5vw, 5rem);
+}
+
+.ComparisonSection_tableWrap__hjA62 {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ComparisonSection_table__zWb0m {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 580px;
+}
+
+.ComparisonSection_table__zWb0m th,
+.ComparisonSection_table__zWb0m td {
+  text-align: left;
+  padding: 1.125rem 1.25rem;
+  border-bottom: 1px solid #2A2A2A;
+  vertical-align: top;
+  font-size: 0.9375rem;
+}
+
+.ComparisonSection_table__zWb0m thead th {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #888880;
+  letter-spacing: 0.03em;
+  padding-bottom: 1.375rem;
+}
+
+.ComparisonSection_table__zWb0m tbody tr {
+  transition: background-color 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.ComparisonSection_table__zWb0m tbody tr:hover {
+  background-color: rgba(240, 237, 232, 0.02);
+}
+
+.ComparisonSection_table__zWb0m tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ComparisonSection_table__zWb0m td:first-child {
+  color: #888880;
+  font-size: 0.875rem;
+}
+
+.ComparisonSection_boxspotCol__Lnj8G {
+  background: #1A1A1A;
+}
+
+.ComparisonSection_boxspotHeader__sAkkv {
+  color: #C8A96E;
+  font-weight: 600;
+  border-top: 2px solid #C8A96E;
+}
+
+.ComparisonSection_boxspotCell__nTRVQ {
+  color: #F0EDE8;
+  font-weight: 500;
+}
+
+.ComparisonSection_otherCell__7AyDe {
+  color: #888880;
+}
+
+@media (max-width: 640px) {
+  .ComparisonSection_section__k9jtj {
+    padding-block: 6rem;
+  }
+
+  .ComparisonSection_table__zWb0m {
+    min-width: 480px;
+  }
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/landing/HeroSection.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.HeroSection_hero__qYdq_ {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #0D0D0D;
+}
+
+.HeroSection_video__nx24n {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.HeroSection_edgeFade__jVdPo {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.HeroSection_edgeFade__jVdPo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    #0D0D0D 0%,
+    rgba(13, 13, 13, 0.5) 14%,
+    rgba(13, 13, 13, 0.25) 30%,
+    rgba(13, 13, 13, 0.35) 44%,
+    rgba(13, 13, 13, 0.7) 60%,
+    rgba(13, 13, 13, 0.92) 78%,
+    #0D0D0D 90%
+  );
+}
+
+/* Extra scrim behind the bottom text area */
+.HeroSection_textScrim__mvldk {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 55%;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(13, 13, 13, 0.6) 40%,
+    rgba(13, 13, 13, 0.88) 75%,
+    #0D0D0D 100%
+  );
+}
+
+.HeroSection_edgeFade__jVdPo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    #0D0D0D 0%,
+    rgba(13, 13, 13, 0.35) 8%,
+    transparent 18%,
+    transparent 82%,
+    rgba(13, 13, 13, 0.35) 92%,
+    #0D0D0D 100%
+  );
+}
+
+.HeroSection_content__pwfTR {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100dvh;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem) clamp(10vh, 14vh, 16vh);
+}
+
+.HeroSection_eyebrow__x_gfS {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #C8A96E;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1.25rem;
+  animation: HeroSection_fadeSlideUp__ZpAgT 0.8s cubic-bezier(0.32, 0.72, 0, 1) both;
+  animation-delay: 0.15s;
+}
+
+.HeroSection_headline__4tPt4 {
+  font-size: clamp(3.25rem, 6vw + 0.5rem, 5.5rem);
+  font-weight: 300;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  color: #F0EDE8;
+  white-space: pre-line;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
+  animation: HeroSection_fadeSlideUp__ZpAgT 1.2s cubic-bezier(0.32, 0.72, 0, 1) both;
+  animation-delay: 0.3s;
+}
+
+.HeroSection_subline__bq86q {
+  font-size: clamp(0.9375rem, 0.88rem + 0.25vw, 1.0625rem);
+  color: #888880;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.6);
+  max-width: 440px;
+  line-height: 1.65;
+  margin-top: 1.5rem;
+  animation: HeroSection_fadeSlideUp__ZpAgT 1s cubic-bezier(0.32, 0.72, 0, 1) both;
+  animation-delay: 0.55s;
+}
+
+.HeroSection_cta__VC_du {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #C8A96E;
+  color: #0D0D0D;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  padding: 0.9375rem 2.25rem;
+  border-radius: 2px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 2rem;
+  transition:
+    background-color 150ms ease,
+    transform 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+  animation: HeroSection_fadeSlideUp__ZpAgT 1s cubic-bezier(0.32, 0.72, 0, 1) both;
+  animation-delay: 0.75s;
+}
+
+.HeroSection_cta__VC_du:hover {
+  background: #D4B87A;
+  transform: translateY(-1px);
+}
+
+.HeroSection_cta__VC_du:active {
+  transform: scale(0.98) translateY(1px);
+}
+
+@keyframes HeroSection_fadeSlideUp__ZpAgT {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .HeroSection_content__pwfTR {
+    padding-bottom: 8vh;
+  }
+
+  .HeroSection_subline__bq86q {
+    max-width: none;
+  }
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/landing/OfferColumns.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+.OfferColumns_section__PMUnE {
+  background: #0D0D0D;
+  padding-block: clamp(8rem, 14vw, 14rem);
+}
+
+.OfferColumns_inner__GRsTC {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 4rem);
+  display: grid;
+  grid-template-columns: 1.1fr 1px 0.9fr;
+  gap: clamp(2.5rem, 5vw, 5rem);
+}
+
+.OfferColumns_column__w_SXV {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.OfferColumns_eyebrow__YGs6n {
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  color: #C8A96E;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.OfferColumns_headline__fmG_d {
+  font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.25rem);
+  font-weight: 500;
+  color: #F0EDE8;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.OfferColumns_body__Skqzy {
+  font-size: clamp(0.9375rem, 0.88rem + 0.25vw, 1rem);
+  color: #888880;
+  line-height: 1.75;
+  max-width: 42ch;
+}
+
+.OfferColumns_link__tRNQ3 {
+  font-size: 0.9375rem;
+  color: #C8A96E;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition:
+    color 150ms ease,
+    transform 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.OfferColumns_link__tRNQ3:hover {
+  color: #D4B87A;
+  transform: translateX(3px);
+}
+
+.OfferColumns_divider__L_Psx {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #2A2A2A 15%,
+    #2A2A2A 85%,
+    transparent 100%
+  );
+  width: 1px;
+}
+
+@media (max-width: 768px) {
+  .OfferColumns_section__PMUnE {
+    padding-block: 6rem;
+  }
+
+  .OfferColumns_inner__GRsTC {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .OfferColumns_divider__L_Psx {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      #2A2A2A 15%,
+      #2A2A2A 85%,
+      transparent 100%
+    );
+  }
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/landing/ScrollAnimation.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+.ScrollAnimation_section__rL8GY {
+  position: relative;
+  height: 400vh;
+  background: #0D0D0D;
+}
+
+.ScrollAnimation_sticky__J5Kzq {
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  overflow: hidden;
+}
+
+.ScrollAnimation_frameContainer__rfpV7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(2.5rem, 4.5vw, 4.5rem);
+  overflow: hidden;
+}
+
+.ScrollAnimation_frame__acVIF {
+  max-width: 100%;
+  max-height: 80dvh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.ScrollAnimation_frameFallback__6_gEc {
+  width: 80%;
+  aspect-ratio: 4 / 3;
+  background: #1A1A1A;
+  border: 1px solid #2A2A2A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888880;
+  font-size: 0.875rem;
+}
+
+.ScrollAnimation_panels__SO3hq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(3rem, 5.5vw, 6rem);
+  gap: clamp(3.5rem, 5.5vw, 5.5rem);
+}
+
+.ScrollAnimation_panel__0nuYI {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  transition:
+    opacity 0.7s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.7s cubic-bezier(0.32, 0.72, 0, 1);
+  will-change: opacity, transform;
+}
+
+.ScrollAnimation_panelLabel__0bxrM {
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  color: #C8A96E;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.ScrollAnimation_panelHeadline__k_cCq {
+  font-size: clamp(1.5rem, 1.2rem + 1vw, 1.875rem);
+  font-weight: 500;
+  color: #F0EDE8;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.ScrollAnimation_panelBody__sIxt3 {
+  font-size: clamp(0.9375rem, 0.88rem + 0.25vw, 1rem);
+  color: #888880;
+  line-height: 1.75;
+  max-width: 320px;
+}
+
+@media (max-width: 768px) {
+  .ScrollAnimation_section__rL8GY {
+    height: auto;
+  }
+
+  .ScrollAnimation_sticky__J5Kzq {
+    position: static;
+    height: auto;
+    grid-template-columns: 1fr;
+    padding-block: 5rem;
+  }
+
+  .ScrollAnimation_frameContainer__rfpV7 {
+    min-height: 240px;
+  }
+
+  .ScrollAnimation_panels__SO3hq {
+    gap: 3rem;
+  }
+
+  .ScrollAnimation_panel__0nuYI {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/landing/SocialProofBar.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+.SocialProofBar_section___0fVw {
+  padding-block: clamp(8rem, 14vw, 14rem);
+  background: #0D0D0D;
+}
+
+.SocialProofBar_inner__3I1fu {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 3.5vw, 3.5rem);
+}
+
+.SocialProofBar_metric__ENO_q {
+  display: flex;
+  align-items: baseline;
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.SocialProofBar_number__CURG0 {
+  font-size: clamp(3rem, 2.5rem + 3vw, 5.5rem);
+  font-weight: 600;
+  color: #C8A96E;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  min-width: 2.5ch;
+}
+
+.SocialProofBar_label__Xzhfi {
+  font-size: clamp(1.0625rem, 1rem + 0.4vw, 1.375rem);
+  color: #888880;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+@media (max-width: 640px) {
+  .SocialProofBar_section___0fVw {
+    padding-block: 5.5rem;
+  }
+
+  .SocialProofBar_metric__ENO_q {
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .SocialProofBar_number__CURG0 {
+    min-width: auto;
+  }
+}
+

@@ -1,6 +1,6 @@
 .section {
   background: #0D0D0D;
-  padding-block: clamp(7rem, 12vw, 12rem);
+  padding-block: clamp(8rem, 14vw, 14rem);
 }
 
 .inner {
@@ -10,12 +10,12 @@
 }
 
 .title {
-  font-size: clamp(1.875rem, 1.4rem + 2vw, 2.5rem);
+  font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem);
   font-weight: 500;
   color: #F0EDE8;
   text-align: center;
-  letter-spacing: -0.025em;
-  margin-bottom: clamp(2.5rem, 4vw, 4rem);
+  letter-spacing: -0.03em;
+  margin-bottom: clamp(3rem, 5vw, 5rem);
 }
 
 .tableWrap {
@@ -84,7 +84,7 @@
 
 @media (max-width: 640px) {
   .section {
-    padding-block: 5rem;
+    padding-block: 6rem;
   }
 
   .table {

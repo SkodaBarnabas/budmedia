@@ -46,15 +46,15 @@ export function HeroSection() {
       </video>
 
       <div className={styles.edgeFade} aria-hidden="true" />
+      <div className={styles.textScrim} aria-hidden="true" />
 
       <div className={styles.content}>
-        <div className={styles.textZone}>
-          <h1 className={styles.headline}>{content.hero.headline}</h1>
-          <p className={styles.subline}>{content.hero.subline}</p>
-          <Link href="/kontakt" className={styles.cta}>
-            {content.hero.cta}
-          </Link>
-        </div>
+        <p className={styles.eyebrow}>{content.hero.eyebrow}</p>
+        <h1 className={styles.headline}>{content.hero.headline}</h1>
+        <p className={styles.subline}>{content.hero.subline}</p>
+        <Link href="/kontakt" className={styles.cta}>
+          {content.hero.cta}
+        </Link>
       </div>
     </section>
   );
